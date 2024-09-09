@@ -24,6 +24,7 @@ $ ./analyze_pscan.sh M4DL0B1001611B2/
 # Description
 ## Bash scripts
 ## Python scripts
+tester\_setup<number\_of\_the\_setup>-THE-SETUP\_arr.py 
 ## Module files
 For each tested module a separate directory named after module ID is created. The directory consists of 3 main folders, a data file and log files. 
 ### p-scan files
