@@ -25,11 +25,18 @@ $ ./analyze_pscan.sh M4DL0B1001611B2/
 ## Bash scripts
 ## Python scripts
 ## Module files
+For each tested module a separate directory named after module ID is created. The directory consists of 3 main folders, a data file and log files. 
 ### p-scan files
+pscan_files
 ### trim files
+trim_files
 ### connectivity check files
+conn_check_files
 ## Analysis macros
-
+### trim_adc
+### execution
+### plot_1024
+### analysis_conn_check
 # Future development ideas
 * rewrite from scratch
   + python serial communication scripts 
