@@ -40,7 +40,7 @@ execution.C
 ### plot 1024
 plot_1024.C
 ### analysis conn check
-analysis_conn_check
+analysis_conn_check.C
 # Future development ideas
 * rewrite from scratch
   + python serial communication scripts 
