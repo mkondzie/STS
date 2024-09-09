@@ -15,8 +15,8 @@ $ ./analyze_pscan.sh M4DL0B1001611B2/
 ## Analysis macros
 
 # Future development ideas
-*rewrite from scratch
+* rewrite from scratch
   + python serial communication scripts 
   + ROOT analysis macros
-*divide the codebase using OOP principles
-*synchronize data taking and analysis to plot results dynamically
+* divide the codebase using OOP principles
+* synchronize data taking and analysis to plot results dynamically
