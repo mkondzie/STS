@@ -9,6 +9,8 @@ In order to launch the calibration (LV ON, HW ON), modify the python script acco
 to call it you need to provide the number of the setup as the argument. For instance, if you want to modify the script for setup 2, you need to call:
 `` ./check_trim_calib.sh 2
 ``
+
+
 In order to launch the connectivity check (LV ON, HV OFF), modify the python script accordinly by running a shell script:
 ```
  ./conn_check.sh <number_of_the_setup>
