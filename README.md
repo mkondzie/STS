@@ -33,10 +33,14 @@ trim_files
 ### connectivity check files
 conn_check_files
 ## Analysis macros
-### trim_adc
+### trim adc
+trim_adc.hxx and trim_adc.cxx
 ### execution
-### plot_1024
-### analysis_conn_check
+execution.C
+### plot 1024
+plot_1024.C
+### analysis conn check
+analysis_conn_check
 # Future development ideas
 * rewrite from scratch
   + python serial communication scripts 
