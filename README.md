@@ -49,7 +49,7 @@ The plot_1024.C macro is used to plot the calibration data for all ASICs, sorted
 ### analysis conn check
 In order to check connectivity when high voltage is turned off, the analysis_conn_check.C macro is used as an alternative method for detecting broken channels.
 # References 
-[Nuclear Instruments and Methods in Physics Research A 1058 (2024) 168813]([https://doi.org/10.5281/zenodo.6476040](https://doi.org/10.1016/j.nima.2023.168813))
+[Nuclear Instruments and Methods in Physics Research A 1058 (2024) 168813](https://doi.org/10.1016/j.nima.2023.168813)
 # Future development ideas
 * rewrite from scratch
   + python serial communication scripts 
