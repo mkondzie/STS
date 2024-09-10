@@ -2,7 +2,7 @@
 Raw data from calibration of the STS modules, analysis of the STS data and automation of analysis-related tasks and activities for the STS.
 # How to use
 ## Running tests 
-In order to launch the calibration (LV ON, HW ON), modify the python script accordinly by running a shell script:
+In order to launch the calibration (LV ON, HW ON), modify the `tester_febs_setup<number_of_the_setup>_arr.py` python script accordinly by running a shell script:
 ```
 ./check_trim_calib.sh <number_of_the_setup>
 ```
@@ -31,8 +31,7 @@ $ ./analyze_pscan.sh M5UL5B0010180A2
 ## Bash scripts
 ## Python scripts
 ## calibration
-The tester_febs_setup<number\_of\_the\_setup>_arr.py script serves as hardware communication tool. It is used to connect EMUs, find FEBs and sync ASICs. 
-
+The `tester_febs_setup<number_of_the_setup>_arr.py` script serves as hardware communication tool. It is used to connect EMUs, find FEBs and sync ASICs. The script runs test sequence (calibration of the module, setting the calibration trim and connectivity check) and writes data to files. 
 ## burn-in
 tester\_setup<number\_of\_the\_setup>-THE-SETUP\_arr.py 
 ## Module files
