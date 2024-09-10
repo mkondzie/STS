@@ -21,9 +21,9 @@ In order to analyze data for one module (sample data included), run the followin
 ```
 $ ./analyze_pscan.sh <module_ID>
 ```
-For instance, if you wish to run analysis for module M4DL0B1001611B2, call:
+For instance, if you wish to run analysis for module M5UL5B0010180A2, call:
 ``
-$ ./analyze_pscan.sh M4DL0B1001611B2/
+$ ./analyze_pscan.sh M5UL5B0010180A2
 ``
 # Description
 ## Bash scripts
@@ -39,16 +39,16 @@ trim_files
 conn_check_files
 ## Analysis macros
 ### trim adc
-trim_adc.hxx and trim_adc.cxx
+The trim_adc.hxx and trim_adc.cxx files introduce the trim_check class, which is responsible for reading raw data (txt files) and converting it into ROOT files for further analysis.
 ### execution
-execution.C
+The execution.C macro acts as a proxy for reading files and utilizes the trim_check class.
 ### plot 1024
-plot_1024.C
+The plot_1024.C macro is used to plot the calibration data for all ASICs, sorted including the position of each ASIC on the FEB. Noise levels predicted based on sensor length, microcable length and intrinsic ASIC noise are adjusted for each module, based on the module ID.  
 ### analysis conn check
-analysis_conn_check.C
+In order to check connectivity when high voltage is turned off, the analysis_conn_check.C macro is used as an alternative method for detecting broken channels.
 # Future development ideas
 * rewrite from scratch
   + python serial communication scripts 
   + ROOT analysis macros
-* divide the codebase using OOP principles
+* organize the codebase using OOP principles
 * synchronize data taking and analysis to plot results dynamically
