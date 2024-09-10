@@ -45,10 +45,10 @@ done
 ena_asics_h_str=$(IFS=,; echo "${ena_asics_h[*]}")
 ena_asics_e_str=$(IFS=,; echo "${ena_asics_e[*]}")
 
-# Modify the plot_1024_Maria.C script based on the final ena_asics arrays
-echo "Modifying plot_1024_Maria.C script."
-sed -i "/int ena_asics_h\[8\] =/c\int ena_asics_h[8] = {$ena_asics_h_str};" plot_1024_Maria.C
-sed -i "/int ena_asics_e\[8\] =/c\int ena_asics_e[8] = {$ena_asics_e_str};" plot_1024_Maria.C
+# Modify the plot_1024.C script based on the final ena_asics arrays
+echo "Modifying plot_1024.C script."
+sed -i "/int ena_asics_h\[8\] =/c\int ena_asics_h[8] = {$ena_asics_h_str};" plot_1024.C
+sed -i "/int ena_asics_e\[8\] =/c\int ena_asics_e[8] = {$ena_asics_e_str};" plot_1024.C
 
 # Output the final ena_asics arrays for confirmation
 echo "Final ena_asics_h: {$ena_asics_h_str}"
