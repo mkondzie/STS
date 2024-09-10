@@ -48,10 +48,12 @@ $ ./analyze_pscan.sh M5UL5B0010180A2
 ``
 # Description
 ## Bash scripts
+### analyze p-scan
+The `analyze_pscan.sh` script comprises of several repetitive steps that need to be performed in order to visualize the most recent calibration results. Several techniques have been used to ensure smooth macros execution even on imperfect data.
 ## Python scripts
-## Calibration
+### Calibration
 The `tester_febs_setup<number_of_the_setup>_arr.py` script serves as hardware communication tool. It is used to connect EMUs, find FEBs and sync ASICs. The script runs test sequence (calibration of the module, setting the calibration trim and connectivity check) and writes data to files. 
-## Burn-in
+### Burn-in
 The `feb_test.py` or the `feb_test2.py` script (depending on the setup) is used to manage the thermal stress testing process. This script controls a climatic chamber, a chiller, power supplies, as well as synchronizes the ASICs. 
 ## Module files
 For each tested module a separate directory named after module ID is created. The directory consists of 3 main folders, a data file and log files. 
