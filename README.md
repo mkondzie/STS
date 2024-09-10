@@ -38,7 +38,7 @@ The pscan_files directory contains one txt file for each ASIC. For each out of c
 ### trim files
 The trim_files directory contains threshold correction data for each discriminator of each channel of each ASIC of a given polarity.
 ### connectivity check files
-The conn_check_files directory contains txt files, one for each ASIC. The files include ADC values for each channel and the corresponding signal amplitude. 
+The conn_check_files directory contains txt files, one for each ASIC. The files include ADC values for each channel and the corresponding amplitude. 
 ## Analysis macros
 ### trim adc
 The trim_adc.hxx and trim_adc.cxx files introduce the trim_adc class, which is responsible for reading raw data (txt files) and converting it into ROOT files for further analysis.
