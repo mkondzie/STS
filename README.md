@@ -34,7 +34,7 @@ Finally, in case of BURN-IN setup 2, to adjust the script to a PB-type module, r
 ```
  ./module_PB2.sh
 ```
-After initiating the appropriate script, configure the module-specific details by editing the "test-parameters.json" file for BURN-IN setup 1 or "test-parameters2.json" for BURN-IN setup 2, which contains config data for the burn-in process. Finally, run the "run-exp.py" or "run-exp2.py" script to begin the burn-in test and collect the necessary data.
+After initiating the appropriate script, configure the module-specific details by editing the `test_parameters.json` file for BURN-IN setup 1 or `test_parameters2.json` for BURN-IN setup 2, which contains config data for the burn-in process. Finally, run the `run_exp.py` or `run_exp2.py` script to begin the burn-in test and collect the necessary data.
 ## Analysis
 In principle, all provided analysis macros require [ROOT to be installed](https://root.cern/install/).
 
