@@ -2,7 +2,7 @@
 Raw data from calibration of the STS modules, analysis of the STS data and automation of analysis-related tasks and activities for the STS.
 # How to use
 ## Running tests 
-# calibration
+### Calibration
 In order to launch the calibration (LV ON, HW ON), modify the `tester_febs_setup<number_of_the_setup>_arr.py` python script accordinly by running a shell script:
 ```
 ./check_trim_calib.sh <number_of_the_setup>
@@ -16,8 +16,25 @@ In order to launch the connectivity check (LV ON, HV OFF), modify the python scr
 ```
  ./conn_check.sh <number_of_the_setup>
 ```
-# burn-in
-In before launching a thermal stress test, the hardware communication script needs to be modified depending on the 
+### Burn-in
+Before launching a thermal stress test, the hardware communication script (feb_test.py or feb_test2.py) needs to be modified based on the module type (PA or PB). 
+In order to modify the `feb_test.py` script for BURN-IN setup 1 in case of a PA-type module, run the following:
+```
+ ./module_PA.sh
+```
+Similarly, to modify the `feb_test.py` script for BURN-IN setup 1 in case of a PB-type module, run the following:
+```
+ ./module_PB.sh
+```
+When working with BURN-IN setup 2, to adjust the script to a PA-type module, please run:
+```
+ ./module_PA2.sh
+```
+Finally, in case of BURN-IN setup 2, to adjust the script to a PB-type module, run:
+```
+ ./module_PB2.sh
+```
+After initiating the appropriate script, configure the module-specific details by editing the "test-parameters.json" file for BURN-IN setup 1 or "test-parameters2.json" for BURN-IN setup 2, which contains config data for the burn-in process. Finally, run the "run-exp.py" or "run-exp2.py" script to begin the burn-in test and collect the necessary data.
 ## Analysis
 In principle, all provided analysis macros require [ROOT to be installed](https://root.cern/install/).
 
@@ -32,9 +49,9 @@ $ ./analyze_pscan.sh M5UL5B0010180A2
 # Description
 ## Bash scripts
 ## Python scripts
-## calibration
+## Calibration
 The `tester_febs_setup<number_of_the_setup>_arr.py` script serves as hardware communication tool. It is used to connect EMUs, find FEBs and sync ASICs. The script runs test sequence (calibration of the module, setting the calibration trim and connectivity check) and writes data to files. 
-## burn-in
+## Burn-in
 The `feb_test.py` or the `feb_test2.py` script (depending on the setup) is used to manage the thermal stress testing process. This script controls a climatic chamber, a chiller, power supplies, as well as synchronizes the ASICs. 
 ## Module files
 For each tested module a separate directory named after module ID is created. The directory consists of 3 main folders, a data file and log files. 
