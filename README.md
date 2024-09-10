@@ -34,18 +34,16 @@ tester\_setup<number\_of\_the\_setup>-THE-SETUP\_arr.py
 ## Module files
 For each tested module a separate directory named after module ID is created. The directory consists of 3 main folders, a data file and log files. 
 ### p-scan files
-The pscan_files directory contains one txt file for each ASIC. For each out of chosen discriminators, signals are recorded for every channel of an ASIC. Signals originate from a pulse generator injecting the channels with fixed-amplitude pulses.
-
-The files include ADC values for each channel and the corresponding signal amplitude. 
+The pscan_files directory contains one txt file for each ASIC. For each out of chosen discriminators, signals are recorded for every channel of an ASIC. Signals originate from a pulse generator injecting the channels with fixed-amplitude pulses. Based on this procedure, an individual threshold is assigned to each discriminator.
 ### trim files
-trim_files
+The trim_files directory contains threshold correction data for each discriminator of each channel of each ASIC of a given polarity.
 ### connectivity check files
 The conn_check_files directory contains txt files, one for each ASIC. The files include ADC values for each channel and the corresponding signal amplitude. 
 ## Analysis macros
 ### trim adc
-The trim_adc.hxx and trim_adc.cxx files introduce the trim_check class, which is responsible for reading raw data (txt files) and converting it into ROOT files for further analysis.
+The trim_adc.hxx and trim_adc.cxx files introduce the trim_adc class, which is responsible for reading raw data (txt files) and converting it into ROOT files for further analysis.
 ### execution
-The execution.C macro acts as a proxy for reading files and utilizes the trim_check class.
+The execution.C macro acts as a proxy for reading files and utilizes the trim_adc class.
 ### plot 1024
 The plot_1024.C macro is used to plot the calibration data for all ASICs, sorted including the position of each ASIC on the FEB. Noise levels predicted based on sensor length, microcable length and intrinsic ASIC noise are adjusted for each module, based on the module ID. ADC gain as well as ADC threshold are analyzed. Broken channels can be detected with the distinction of no analog response (NAR), broken bond at the ASIC (ASIC) and broken bond at the sensor (SENS).
 ### analysis conn check
