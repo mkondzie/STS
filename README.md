@@ -17,7 +17,6 @@ In order to launch the connectivity check (LV ON, HV OFF), modify the python scr
 ```
 
 ## Analysis
-### Before you start
 In principle, all provided analysis macros require [ROOT to be installed](https://root.cern/install/).
 
 In order to analyze data for one module (sample data included), run the following command:
