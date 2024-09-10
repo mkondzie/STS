@@ -50,7 +50,7 @@ The trim_adc.hxx and trim_adc.cxx files introduce the trim_adc class, which is r
 ### execution
 The execution.C macro acts as a proxy for reading files and utilizes the trim_adc class.
 ### plot 1024
-The plot_1024.C macro is used to plot the calibration data for all ASICs, sorted including the position of each ASIC on the FEB. Noise levels predicted based on sensor length, microcable length and intrinsic ASIC noise are adjusted for each module, based on the module ID. ADC gain as well as ADC threshold analysis is visualized. Broken channels can be detected with the distinction of no analog response (NAR), broken bond at the ASIC (ASIC) and broken bond at the sensor (SENS).
+The plot_1024.C macro is used to plot the calibration data for all ASICs, sorted including the position of each ASIC on the FEB. Noise levels predicted based on sensor length, microcable length and intrinsic ASIC noise are adjusted for each module, based on the module ID. ADC gain as well as ADC threshold for each out of 1024 channels is visualized. Broken channels can be detected with the distinction of no analog response (NAR), broken bond at the ASIC (ASIC) and broken bond at the sensor (SENS).
 ### analysis conn check
 In order to check connectivity when high voltage is turned off, the analysis_conn_check.C macro is used as an alternative method for detecting broken channels.
 # References 
