@@ -43,13 +43,23 @@ In order to analyze data for one module (sample data included), run the followin
 $ ./analyze_pscan.sh <module_ID>
 ```
 For instance, if you wish to run analysis for module M5UL5B0010180A2, call:
+
+
 ``
 $ ./analyze_pscan.sh M5UL5B0010180A2
 ``
 # Description
 ## Bash scripts
-### analyze p-scan
+## Calibration
+The `check_trim_calib.sh` and `conn_check.sh` scripts are used (see the *Running tests* section) to modify the python script, for calibration and connectivity test, accordingly.
+### Burn-in
+As described in the *Running tests* section, the `module_PA.sh`, `module_PB.sh`, `module_PA2.sh` and `module_PB2.sh` scripts help during thermal stress test launch.
+### ASIC sorting
+The `find_ASICs.sh` script checks if all ASIC files are present for each polarity. In case some files are missing, it modifies the `plot_1024.C` macro accordingly. Thanks to this scirpt, even the partial results can be visualized without encountering errors.
+The `count_select_sort_files.sh` script, as the name suggests, is responsible for counting, selecting the most recent files and sorting them in a specific order depending on the module type PA or PB. Similarly, `count_select_sort_root_files.sh` script handles the same tasks but for ROOT files. These scripts are employed during `analyze_pscan.sh` execution, to properly list the relevant files for further analysis.
+### p-scan analysis
 The `analyze_pscan.sh` script comprises of several repetitive steps that need to be performed in order to visualize the most recent calibration results. Several techniques have been used to ensure smooth macros execution even on imperfect data.
+
 ## Python scripts
 ### Calibration
 The `tester_febs_setup<number_of_the_setup>_arr.py` script serves as hardware communication tool. It is used to connect EMUs, find FEBs and sync ASICs. The script runs test sequence (calibration of the module, setting the calibration trim and connectivity check) and writes data to files. 
