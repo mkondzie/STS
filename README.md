@@ -34,11 +34,11 @@ tester\_setup<number\_of\_the\_setup>-THE-SETUP\_arr.py
 ## Module files
 For each tested module a separate directory named after module ID is created. The directory consists of 3 main folders, a data file and log files. 
 ### p-scan files
-pscan_files
+The pscan_files directory contains raw txt files, one for each ASIC. The files include ADC values for each channel and the corresponding signal amplitude. 
 ### trim files
 trim_files
 ### connectivity check files
-conn_check_files
+The conn_check_files directory contains raw txt files, one for each ASIC. The files include ADC values for each channel and the corresponding signal amplitude. 
 ## Analysis macros
 ### trim adc
 The trim_adc.hxx and trim_adc.cxx files introduce the trim_check class, which is responsible for reading raw data (txt files) and converting it into ROOT files for further analysis.
