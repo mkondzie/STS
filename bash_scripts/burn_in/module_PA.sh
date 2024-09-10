@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filename="feb_test.py"
+filename="../../python_scripts/burn_in/feb_test.py"
 
 # Use sed to replace the line containing active_downlinks = [1
 sed -i '/active_downlinks = \[1/s/.*/    #active_downlinks = \[1,2\] #For modules PB/' "$filename"

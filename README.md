@@ -19,8 +19,12 @@ In order to launch the connectivity check (LV ON, HV OFF), modify the python scr
 ## Analysis
 In order to analyze data for one module (sample data included), run the following command:
 ```
-$ ./analyze_pscan.sh M4DL0B1001611B2/
+$ ./analyze_pscan.sh <module_ID>
 ```
+For instance, if you wish to run analysis for module M4DL0B1001611B2, call:
+``
+$ ./analyze_pscan.sh M4DL0B1001611B2/
+``
 # Description
 ## Bash scripts
 ## Python scripts

@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 setup_number=$1
-filename="tester_febs_setup${setup_number}_arr.py"
+filename="../../python_scripts/calibration/tester_febs_setup${setup_number}_arr.py"
 
 # Use sed to replace the line containing test_list_check = 
 sed -i '/test_list_check = /s/.*/test_list_check = ["set_trim_calib", "#check_trim", "#turn_hv_off", "conn_check"]/' "$filename"

@@ -21,15 +21,15 @@
 #include <TPad.h>
 #include <TF1.h>
 #include <TBrowser.h>
-#include "TObject.h"
 #include <TLatex.h>
 #include <vector>
 #include <stdlib.h> 
 #include <cstdio>
 #include <ctime>
+#include <filesystem>
 
 TString filename_data;
-std::vector<string> file_names;
+std::vector<std::string> file_names;
 
 float enc_h[1024];
 float enc_e[1024];
@@ -121,17 +121,79 @@ bool Read_file_tests(){
 //! Get_file_name from the file list
 std::string Get_file_name(int i) {return file_names[i];}
 
-// ---------------------- MAIN function ------------------------- 
-int plot_1024(TString module_ID = "SETUP", float sensor_size = 6.2, float cable_length = 30.0 ){
+TString get_module_ID() {
+  std::string current_path = std::filesystem::current_path().string();
+  std::string parent_path =
+      std::filesystem::path(current_path).parent_path().string();
+  std::string module_ID =
+      std::filesystem::path(parent_path).filename().string();
+  return TString(module_ID);
+}
+
+auto extract_ladder_number = [](const TString &module_ID) {
+  return TString(module_ID(10, 2)); 
+};
+
+auto extract_module_type = [](const TString &module_ID) {
+  return TString(module_ID(6, 1));
+};
+
+std::pair<float, float> find_cable_length_sensor_size() {
+
+  TString module_ID = get_module_ID();
+  std::cout << "module ID: " << module_ID << std::endl;
+  std::cout << "module type: " << extract_module_type(module_ID) << std::endl;
+  std::cout << "ladder number: " << extract_ladder_number(module_ID)
+            << std::endl;
+
+  //___________find__matching__ladder__number__and_module_type_____________//
+  TString fileName = "../../Ladder_sensors_cables.csv";
+  const std::string LADDER_HEADER = "Ladder Type / Module";
+  std::ifstream input_stream(fileName.Data());
+  std::string line;
+  std::string ladder_number, module_type;
+  float n_side_cable, p_side_cable, sensor_size_mm, average_cm;
+  float cable_length, sensor_size;
+
+  while (getline(input_stream, line)) {
+
+    std::istringstream string_stream(line);
+    string_stream >> ladder_number >> module_type >> n_side_cable >>
+        p_side_cable >> sensor_size_mm >> average_cm;
+    
+    if (ladder_number.find("L") != std::string::npos &&
+        ladder_number != LADDER_HEADER) {
+
+      if (ladder_number.substr(ladder_number.find_last_of(ladder_number.back()) - 1 , 2) ==
+          extract_ladder_number(module_ID)) {
+        if((module_type.substr(module_type.find("M")+ 2)) == extract_module_type(module_ID)){
+                  std::cout << "found ladder " <<  extract_ladder_number(module_ID) << std::endl;
+                  std::cout << "found module " <<  extract_module_type(module_ID) << std::endl;
+
+     cable_length = average_cm;
+     sensor_size = sensor_size_mm / 10.0; // convert mm to cm
+        }
+      }
+    }
+  }
+std::cout << "cable_length " << cable_length << std::endl;
+std::cout << "sensor_size " << sensor_size << std::endl;
+    return std::make_pair(cable_length, sensor_size);
+}
+// ---------------------- MAIN function -------------------------
+int plot_1024(
+) {
+  TString module_ID = get_module_ID();      // module ID
+  std::pair<float, float> module_params = find_cable_length_sensor_size();
+  float cable_length = module_params.first; // microcable length
+  float sensor_size = module_params.second; // sensor size
 
   //  --------------------------------------- General paramters of the ASIC analysis ----------------------------------
   time_t now = time(0); 
   char* date = ctime(&now);
-  cout << "Date: "<< date<<endl;                                                                              // Running time of the analysis						        					                                                      
+  std::cout << "Date: "<< date<<std::endl;                                                                              // Running time of the analysis	
   TString operatorID = "AdrianRR";													                                                  // Operator's ID
-  TString LabID = "GSI";															                                                        // Lab's ID      										                                              // module ID
-  //float cable_length = 49;														                                                      // microcable length
-  //float sensor_size = 6.2; 															                                                      // sensor length size
+  TString LabID = "GSI";															                                                        // Lab's ID      				
   float z_alpha = 2.0; 														                                                              // confidence levels to determine broken channels (95%) 
   float slope_enc_cap = 25.0;														                                                      // Measured ENC vs C slope
   float z_strips_cap = 17 ;                                                                                   // Capacitance of the Z strips for Hamamatsu sensors
@@ -139,7 +201,7 @@ int plot_1024(TString module_ID = "SETUP", float sensor_size = 6.2, float cable_
   float enc_ana = enc_asic + ((cable_length)*0.38 + (sensor_size)*1.02)*slope_enc_cap;    		                  // ENC calculation based on ENC vs C parametrization
   float enc_ana_zz = enc_asic + ((cable_length)*0.38 + (sensor_size)*1.0 + z_strips_cap)*slope_enc_cap;    		// ENC calculation based on ENC vs C parametrization for Z strips
   float enc_mic = enc_asic +  ((cable_length)*0.38)*slope_enc_cap;						                                // ENC microcable based on ENC vs C parametrization
-  int ch_min = 0;                                                                               
+  int ch_min = 0;
   int ch_max = 128;
   int ch_max_module = 1024;
   float enc_fit_min = 100;
