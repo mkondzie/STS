@@ -34,10 +34,11 @@ cp ../../../analysis_macros/plot_1024.C .
 # List the relevant pscan files and save to a.txt
 cp ../../../bash_scripts/ASIC_sorting/find_ASICs.sh .
 cp ../../../bash_scripts/ASIC_sorting/count_select_sort_files.sh .
+chmod +x count_select_sort_files.sh
 ./count_select_sort_files.sh
 
 # Run ROOT commands
-root -l <<EOF
+root -l -b <<EOF
 .L trim_adc.cxx
 .L execution.C
 execution()
@@ -46,10 +47,11 @@ EOF
 
 # List the generated ROOT files and save to plot.txt
 cp ../../../bash_scripts/ASIC_sorting/count_select_sort_root_files.sh .
+chmod +x count_select_sort_root_files.sh
 ./count_select_sort_root_files.sh
 
 # Run the plotting macro
-root -l <<EOF
+root -l -b <<EOF
 .x plot_1024.C
 .q
 EOF

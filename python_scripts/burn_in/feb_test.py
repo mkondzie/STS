@@ -117,8 +117,8 @@ def general_sync(emu_list):
         emu_elements.extend( [emu for i in range(len(setup_elements_tmp))])
 
     #setup_elements = [setup_elements[0]]
-    #active_downlinks = [1,2] #For modules PB
-    active_downlinks = [0,3]  #For modules PA
+    active_downlinks = [1,2] #For modules PB
+    #active_downlinks = [0,3]  #For modules PA
 
     remove_list_01 = []
     remove_list_23 = []

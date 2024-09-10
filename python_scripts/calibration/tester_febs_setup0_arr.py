@@ -1157,7 +1157,7 @@ nloops = 5                      # Number of loops to count noise hits in discrim
 test_list_init = ["#power_on_emu", "full_sync","#turn_hv_on", "read_lv_bc"]
 test_list_comm = ["std_config","read_asic_id","#set_trim_default", "read_lv_ac", "check_vddm_temp"]
 test_list_calib = ["set_trim_default", "get_vrefs", "set_calib_par","get_trim"]
-test_list_check = ["set_trim_calib", "check_trim", "#turn_hv_off", "#conn_check"]
+test_list_check = ["set_trim_calib", "#check_trim", "#turn_hv_off", "conn_check"]
 test_list_stress = ["#reg_config_stress", "#iv_meas", "#set_mbias", "long_run"]
 #test_list_rdata = []
 #test_list_sysoff = ["#set_lv_off", "#set_hv_off"]
@@ -1166,8 +1166,8 @@ test_list_stress = ["#reg_config_stress", "#iv_meas", "#set_mbias", "long_run"]
 test_list = []
 # Add the list of test to perfrom
 test_list.extend(test_list_init)
-test_list.extend(test_list_calib)
-test_list.extend(test_list_calib)
+#test_list.extend(test_list_calib)
+#test_list.extend(test_list_calib)
 test_list.extend(test_list_check)
 #test_list.extend(test_list_stress)
 
