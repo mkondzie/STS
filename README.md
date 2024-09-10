@@ -30,6 +30,10 @@ $ ./analyze_pscan.sh M5UL5B0010180A2
 # Description
 ## Bash scripts
 ## Python scripts
+## calibration
+The tester_febs_setup<number\_of\_the\_setup>_arr.py script serves as hardware communication tool. It is used to connect EMUs, find FEBs and sync ASICs. 
+
+## burn-in
 tester\_setup<number\_of\_the\_setup>-THE-SETUP\_arr.py 
 ## Module files
 For each tested module a separate directory named after module ID is created. The directory consists of 3 main folders, a data file and log files. 
