@@ -48,6 +48,8 @@ The execution.C macro acts as a proxy for reading files and utilizes the trim_ch
 The plot_1024.C macro is used to plot the calibration data for all ASICs, sorted including the position of each ASIC on the FEB. Noise levels predicted based on sensor length, microcable length and intrinsic ASIC noise are adjusted for each module, based on the module ID. ADC gain as well as ADC threshold are analyzed. Broken channels can be detected with the distinction of no analog response (NAR), broken bond at the ASIC (ASIC) and broken bond at the sensor (SENS).
 ### analysis conn check
 In order to check connectivity when high voltage is turned off, the analysis_conn_check.C macro is used as an alternative method for detecting broken channels.
+# References 
+[Nuclear Instruments and Methods in Physics Research A 1058 (2024) 168813]([https://doi.org/10.5281/zenodo.6476040](https://doi.org/10.1016/j.nima.2023.168813))
 # Future development ideas
 * rewrite from scratch
   + python serial communication scripts 
