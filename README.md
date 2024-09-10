@@ -69,14 +69,14 @@ The `feb_test.py` or the `feb_test2.py` script (depending on the setup) is used 
 ## Module files
 For each tested module a separate directory named after module ID is created. The directory consists of 3 main folders, a data file and log files. 
 ### p-scan files
-The pscan_files directory contains one txt file for each ASIC. For each out of chosen discriminators, signals are recorded for every channel of an ASIC. Signals originate from a pulse generator injecting the channels with fixed-amplitude pulses. Based on this procedure, an individual threshold is assigned to each discriminator.
+The pscan_files directory contains one .txt file for each ASIC. For each out of chosen discriminators, signals are recorded for every channel of an ASIC. Signals originate from a pulse generator injecting the channels with fixed-amplitude pulses. Based on this procedure, an individual threshold is assigned to each discriminator.
 ### trim files
 The trim_files directory contains threshold correction data for each discriminator of each channel of each ASIC of a given polarity.
 ### connectivity check files
-The conn_check_files directory contains txt files, one for each ASIC. The files include ADC values for each channel and the corresponding amplitude. 
+The conn_check_files directory contains .txt files, one for each ASIC. The files include ADC values for each channel and the corresponding amplitude. 
 ## Analysis macros
 ### trim adc
-The trim_adc.hxx and trim_adc.cxx files introduce the trim_adc class, which is responsible for reading raw data (txt files) and converting it into ROOT files for further analysis.
+The trim_adc.hxx and trim_adc.cxx files introduce the trim_adc class, which is responsible for reading raw data (.txt files) and converting it into ROOT files for further analysis.
 ### execution
 The execution.C macro acts as a proxy for reading files and utilizes the trim_adc class.
 ### plot 1024
