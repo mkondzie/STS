@@ -145,20 +145,23 @@ void write_parameters(float z_alpha, int n_neigh_ch,
 
     my_file << std::fixed << std::setw(20) << "z_alpha" << '\t' << std::fixed
             << std::setw(20) << "n_neigh_ch" << '\t' << std::fixed
-            << std::setw(20) << '\t' << std::fixed << std::setw(20) << '\t'
-            << std::fixed << std::setw(20) << "n_broken_channels" << '\n';
+            << std::setw(20) << "        " << '\t' << std::fixed
+            << std::setw(20) << "        " << '\t' << std::fixed
+            << std::setw(20) << "n_broken_channels" << '\n';
 
     my_file << std::fixed << std::setw(20) << z_alpha << '\t' << std::fixed
             << std::setw(20) << n_neigh_ch << '\t' << std::fixed
-            << std::setw(20) << '\t' << std::fixed << std::setw(20) << '\t'
-            << std::fixed << std::setw(28) << n_broken_channels << '\n';
+            << std::setw(20) << "        " << '\t' << std::fixed
+            << std::setw(20) << "        " << '\t' << std::fixed
+            << std::setw(20) << n_broken_channels << '\n';
   } else {
     my_file.open("conn_check_parameters.txt", std::ios::app);
 
     my_file << std::fixed << std::setw(20) << z_alpha << '\t' << std::fixed
             << std::setw(20) << n_neigh_ch << '\t' << std::fixed
-            << std::setw(20) << '\t' << std::fixed << std::setw(20) << '\t'
-            << std::fixed << std::setw(28) << n_broken_channels << '\n';
+            << std::setw(20) << "        " << '\t' << std::fixed
+            << std::setw(20) << "        " << '\t' << std::fixed
+            << std::setw(20) << n_broken_channels << '\n';
   }
 
   my_file.close();
@@ -186,7 +189,7 @@ void fill_hist_with_ch(TH1F *hist, std::vector<int> channels, int *ch_hits) {
 }
 
 // ------------------------ Main function ---------------------
-int analysis_conn_check(){
+int analysis_conn_check() {
 
   for (int ch = 0; ch < 128; ch++) {
     for (int d = 0; d < 32; d++) {
@@ -410,6 +413,8 @@ int analysis_conn_check(){
     //  Writing histograms to file
     gStyle->SetOptStat();
     h_ave_hits.Write();
+    h2hits_amp.Write();
+
     h_broken_ch.Write();
 
     h1_ave_even.Write();
@@ -418,12 +423,6 @@ int analysis_conn_check(){
     h_ave_even.Write();
     h_ave_odd.Write();
 
-    h2hits_amp.Write();
-    // add median histograms and threshold histograms
-    h_med_even.Write();
-    h_med_odd.Write();
-    h_thr_even.Write();
-    h_thr_odd.Write();
     // close the opened root file
     file1->Close();
     // Writing summary file
