@@ -1,0 +1,1693 @@
+[INFO] ----------------------- SKIPPING TEST: #power_on_emu -------------------------- 
+[INFO]  ------------------- RUNNING SYNCHRONIZATION ---------------------- 
+[INFO] Setting Elink clock mode to 160 MHz
+[INFO] Scanning setup
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [0]
+[INFO] SOS detected for group 0, downlink 0, uplink 8
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [1]
+[INFO] SOS detected for group 0, downlink 1, uplink 0
+[INFO] SOS detected for group 0, downlink 1, uplink 1
+[INFO] SOS detected for group 0, downlink 1, uplink 2
+[INFO] SOS detected for group 0, downlink 1, uplink 3
+[INFO] SOS detected for group 0, downlink 1, uplink 4
+[INFO] SOS detected for group 0, downlink 1, uplink 5
+[INFO] SOS detected for group 0, downlink 1, uplink 6
+[INFO] SOS detected for group 0, downlink 1, uplink 7
+[INFO] SOS detected for group 0, downlink 1, uplink 8
+[INFO] SOS detected for group 0, downlink 1, uplink 9
+[INFO] SOS detected for group 0, downlink 1, uplink 10
+[INFO] SOS detected for group 0, downlink 1, uplink 11
+[INFO] SOS detected for group 0, downlink 1, uplink 12
+[INFO] SOS detected for group 0, downlink 1, uplink 13
+[INFO] SOS detected for group 0, downlink 1, uplink 14
+[INFO] SOS detected for group 0, downlink 1, uplink 15
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [2]
+[INFO] SOS detected for group 0, downlink 2, uplink 16
+[INFO] SOS detected for group 0, downlink 2, uplink 17
+[INFO] SOS detected for group 0, downlink 2, uplink 18
+[INFO] SOS detected for group 0, downlink 2, uplink 19
+[INFO] SOS detected for group 0, downlink 2, uplink 20
+[INFO] SOS detected for group 0, downlink 2, uplink 21
+[INFO] SOS detected for group 0, downlink 2, uplink 22
+[INFO] SOS detected for group 0, downlink 2, uplink 23
+[INFO] SOS detected for group 0, downlink 2, uplink 24
+[INFO] SOS detected for group 0, downlink 2, uplink 25
+[INFO] SOS detected for group 0, downlink 2, uplink 26
+[INFO] SOS detected for group 0, downlink 2, uplink 27
+[INFO] SOS detected for group 0, downlink 2, uplink 28
+[INFO] SOS detected for group 0, downlink 2, uplink 29
+[INFO] SOS detected for group 0, downlink 2, uplink 30
+[INFO] SOS detected for group 0, downlink 2, uplink 31
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [3]
+[INFO] SOS detected for group 0, downlink 3, uplink 18
+[INFO] SOS detected for group 0, downlink 3, uplink 23
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] Disabling clock on downlink 0
+[INFO] Disabling clock on downlink 1
+[INFO] Disabling clock on downlink 2
+[INFO] Disabling clock on downlink 3
+[INFO] Disabling clock on downlink 4
+[INFO] Checking SOS, encoding_mode: SOS
+[INFO] Setting encoding mode SOS for groups [0], downlinks [4]
+[INFO] Reassigning uplinks to uplinks which passed SOS detection
+[INFO] setup_elements_tmp: 4
+[INFO] SE:	0		[8]  (1)
+[INFO] Remove setup element for downlink no. 0 with uplinks [8]
+[INFO] SE:	1		[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]  (16)
+[INFO] SE:	2		[16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]  (16)
+[INFO] SE:	3		[18, 23]  (2)
+[INFO] Remove setup element for downlink no. 3 with uplinks [18, 23]
+[INFO] Cleaned - SE:	1		[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]  (16)
+[INFO] Final List UPLINKS SE:	1		[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]  (16)
+[INFO] Cleaned - SE:	2		[16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]  (16)
+[INFO] Final List UPLINKS SE:	2		[16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]  (16)
+[INFO] Scanning clock phase
+[INFO] Setting encoding mode SOS for groups [0], downlinks [1]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [1]
+[INFO] Clock phase scan results for group 0, downlink 1
+[INFO] Eye window for uplink 0 : _XXXXXXXXXXX____________________________________________________________________
+Clock Delay: 46
+[INFO] Eye window for uplink 1 : _XXXXXXXXXXX____________________________________________________________________
+Clock Delay: 46
+[INFO] Eye window for uplink 2 : XXXXXXXXXXX_____________________________________________________________________
+Clock Delay: 45
+[INFO] Eye window for uplink 3 : XXXXXXXXXXX_____________________________________________________________________
+Clock Delay: 45
+[INFO] Eye window for uplink 4 : XXXXXXXXXXX____________________________________________________________________X
+Clock Delay: 44
+[INFO] Eye window for uplink 5 : XXXXXXXXXXX____________________________________________________________________X
+Clock Delay: 44
+[INFO] Eye window for uplink 6 : _XXXXXXXXXX_____________________________________________________________________
+Clock Delay: 45
+[INFO] Eye window for uplink 7 : _XXXXXXXXXX_____________________________________________________________________
+Clock Delay: 45
+[INFO] Eye window for uplink 8 : XXXXXXXXX____________________________________________________________________XXX
+Clock Delay: 42
+[INFO] Eye window for uplink 9 : XXXXXXXXX____________________________________________________________________XXX
+Clock Delay: 42
+[INFO] Eye window for uplink 10: XXXXXXXXXX____________________________________________________________________XX
+Clock Delay: 43
+[INFO] Eye window for uplink 11: XXXXXXXXXX____________________________________________________________________XX
+Clock Delay: 43
+[INFO] Eye window for uplink 12: XXXXXXXXXXX_____________________________________________________________________
+Clock Delay: 45
+[INFO] Eye window for uplink 13: XXXXXXXXXXX_____________________________________________________________________
+Clock Delay: 45
+[INFO] Eye window for uplink 14: XXXXXXXXX_______________________________________________________________________
+Clock Delay: 44
+[INFO] Eye window for uplink 15: XXXXXXXXX_______________________________________________________________________
+Clock Delay: 44
+[INFO] post char clk phase
+ 
+Setup Element:
+  Group: 0
+  Downlink: 1
+  Uplinks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  ASICs Map: None
+  Clock Phase Characteristic:
+    Optimal Phase: 44
+    Window Length: 65
+    Eye Windows:
+      Uplink  0: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  1: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  2: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  3: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  4: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  5: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  6: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  7: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  8: XXXXXXXXX____________________________________________________________________XXX
+      Uplink  9: XXXXXXXXX____________________________________________________________________XXX
+      Uplink 10: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 11: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 12: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 13: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 14: XXXXXXXXX_______________________________________________________________________
+      Uplink 15: XXXXXXXXX_______________________________________________________________________
+  Data Phase Characteristics: None
+
+[INFO] Setting the clock phase to 44 for group 0, downlink 1
+[INFO] post set
+ 
+Setup Element:
+  Group: 0
+  Downlink: 1
+  Uplinks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  ASICs Map: None
+  Clock Phase Characteristic:
+    Optimal Phase: 44
+    Window Length: 65
+    Eye Windows:
+      Uplink  0: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  1: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  2: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  3: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  4: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  5: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  6: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  7: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  8: XXXXXXXXX____________________________________________________________________XXX
+      Uplink  9: XXXXXXXXX____________________________________________________________________XXX
+      Uplink 10: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 11: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 12: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 13: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 14: XXXXXXXXX_______________________________________________________________________
+      Uplink 15: XXXXXXXXX_______________________________________________________________________
+  Data Phase Characteristics: None
+
+[INFO] Scanning clock phase
+[INFO] Setting encoding mode SOS for groups [0], downlinks [2]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [2]
+[INFO] Clock phase scan results for group 0, downlink 2
+[INFO] Eye window for uplink 16: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+Clock Delay: 58
+[INFO] Eye window for uplink 17: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+Clock Delay: 58
+[INFO] Eye window for uplink 18: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+Clock Delay: 58
+[INFO] Eye window for uplink 19: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+Clock Delay: 58
+[INFO] Eye window for uplink 20: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+Clock Delay: 60
+[INFO] Eye window for uplink 21: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+Clock Delay: 60
+[INFO] Eye window for uplink 22: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+Clock Delay: 58
+[INFO] Eye window for uplink 23: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+Clock Delay: 58
+[INFO] Eye window for uplink 24: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+Clock Delay: 62
+[INFO] Eye window for uplink 25: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+Clock Delay: 62
+[INFO] Eye window for uplink 26: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+Clock Delay: 63
+[INFO] Eye window for uplink 27: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+Clock Delay: 63
+[INFO] Eye window for uplink 28: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X_X________________________________________
+Clock Delay: 65
+[INFO] Eye window for uplink 29: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+Clock Delay: 64
+[INFO] Eye window for uplink 30: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+Clock Delay: 64
+[INFO] Eye window for uplink 31: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+Clock Delay: 64
+[INFO] post char clk phase
+ 
+Setup Element:
+  Group: 0
+  Downlink: 2
+  Uplinks: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  ASICs Map: None
+  Clock Phase Characteristic:
+    Optimal Phase: 64
+    Window Length: 50
+    Eye Windows:
+      Uplink 16: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 17: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 18: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 19: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 20: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 21: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 22: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 23: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 24: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 25: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 26: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 27: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 28: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X_X________________________________________
+      Uplink 29: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 30: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 31: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+  Data Phase Characteristics: None
+
+[INFO] Setting the clock phase to 64 for group 0, downlink 2
+[INFO] post set
+ 
+Setup Element:
+  Group: 0
+  Downlink: 2
+  Uplinks: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  ASICs Map: None
+  Clock Phase Characteristic:
+    Optimal Phase: 64
+    Window Length: 50
+    Eye Windows:
+      Uplink 16: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 17: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 18: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 19: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 20: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 21: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 22: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 23: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 24: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 25: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 26: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 27: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 28: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X_X________________________________________
+      Uplink 29: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 30: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 31: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+  Data Phase Characteristics: None
+
+[INFO] Scanning data phases
+[INFO] Setting encoding mode SOS for groups [0], downlinks [1]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [1]
+[INFO] Data phase scan results for group 0, downlink 1
+[INFO] Eye window for uplink 0 : _XXXXXX_________________________________
+Data delay found: 23
+[INFO] Eye window for uplink 1 : X____________________________________XXX
+Data delay found: 18
+[INFO] Eye window for uplink 2 : XX__________________________________XXXX
+Data delay found: 18
+[INFO] Eye window for uplink 3 : __________________________________XXXX__
+Data delay found: 15
+[INFO] Eye window for uplink 4 : _________________________________XXXX___
+Data delay found: 14
+[INFO] Eye window for uplink 5 : _____________________________XXXX_______
+Data delay found: 10
+[INFO] Eye window for uplink 6 : ____________________________XXXXXX______
+Data delay found: 10
+[INFO] Eye window for uplink 7 : ________________________XXXXXX__________
+Data delay found: 6
+[INFO] Eye window for uplink 8 : ____________XXXXXX______________________
+Data delay found: 34
+[INFO] Eye window for uplink 9 : __________________XXXXX_________________
+Data delay found: 0
+[INFO] Eye window for uplink 10: _______________XXXXX____________________
+Data delay found: 37
+[INFO] Eye window for uplink 11: ___________________XXXXX________________
+Data delay found: 1
+[INFO] Eye window for uplink 12: __________________XXXX__________________
+Data delay found: 39
+[INFO] Eye window for uplink 13: _____________________XXXX_______________
+Data delay found: 2
+[INFO] Eye window for uplink 14: ________________XXXXX___________________
+Data delay found: 38
+[INFO] Eye window for uplink 15: __________________XXXXX_________________
+Data delay found: 0
+[INFO] post char data phase
+ 
+Setup Element:
+  Group: 0
+  Downlink: 1
+  Uplinks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  ASICs Map: None
+  Clock Phase Characteristic:
+    Optimal Phase: 44
+    Window Length: 65
+    Eye Windows:
+      Uplink  0: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  1: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  2: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  3: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  4: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  5: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  6: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  7: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  8: XXXXXXXXX____________________________________________________________________XXX
+      Uplink  9: XXXXXXXXX____________________________________________________________________XXX
+      Uplink 10: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 11: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 12: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 13: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 14: XXXXXXXXX_______________________________________________________________________
+      Uplink 15: XXXXXXXXX_______________________________________________________________________
+  Data phase characteristics:
+    Uplink 0:
+      Optimal Phase: 23
+      Window Length: 34
+      Eye Window: _XXXXXX_________________________________
+    Uplink 1:
+      Optimal Phase: 18
+      Window Length: 36
+      Eye Window: X____________________________________XXX
+    Uplink 2:
+      Optimal Phase: 18
+      Window Length: 34
+      Eye Window: XX__________________________________XXXX
+    Uplink 3:
+      Optimal Phase: 15
+      Window Length: 36
+      Eye Window: __________________________________XXXX__
+    Uplink 4:
+      Optimal Phase: 14
+      Window Length: 36
+      Eye Window: _________________________________XXXX___
+    Uplink 5:
+      Optimal Phase: 10
+      Window Length: 36
+      Eye Window: _____________________________XXXX_______
+    Uplink 6:
+      Optimal Phase: 10
+      Window Length: 34
+      Eye Window: ____________________________XXXXXX______
+    Uplink 7:
+      Optimal Phase: 6
+      Window Length: 34
+      Eye Window: ________________________XXXXXX__________
+    Uplink 8:
+      Optimal Phase: 34
+      Window Length: 34
+      Eye Window: ____________XXXXXX______________________
+    Uplink 9:
+      Optimal Phase: 0
+      Window Length: 35
+      Eye Window: __________________XXXXX_________________
+    Uplink 10:
+      Optimal Phase: 37
+      Window Length: 35
+      Eye Window: _______________XXXXX____________________
+    Uplink 11:
+      Optimal Phase: 1
+      Window Length: 35
+      Eye Window: ___________________XXXXX________________
+    Uplink 12:
+      Optimal Phase: 39
+      Window Length: 36
+      Eye Window: __________________XXXX__________________
+    Uplink 13:
+      Optimal Phase: 2
+      Window Length: 36
+      Eye Window: _____________________XXXX_______________
+    Uplink 14:
+      Optimal Phase: 38
+      Window Length: 35
+      Eye Window: ________________XXXXX___________________
+    Uplink 15:
+      Optimal Phase: 0
+      Window Length: 35
+      Eye Window: __________________XXXXX_________________
+
+[INFO] Data Phase: 23  BBB  
+[INFO] Setting the data phase to 23 for uplink 0
+[INFO] Data Phase: 18  BBB  
+[INFO] Setting the data phase to 18 for uplink 1
+[INFO] Data Phase: 18  BBB  
+[INFO] Setting the data phase to 18 for uplink 2
+[INFO] Data Phase: 15  BBB  
+[INFO] Setting the data phase to 15 for uplink 3
+[INFO] Data Phase: 14  BBB  
+[INFO] Setting the data phase to 14 for uplink 4
+[INFO] Data Phase: 10  BBB  
+[INFO] Setting the data phase to 10 for uplink 5
+[INFO] Data Phase: 10  BBB  
+[INFO] Setting the data phase to 10 for uplink 6
+[INFO] Data Phase: 6  BBB  
+[INFO] Setting the data phase to 6 for uplink 7
+[INFO] Data Phase: 34  BBB  
+[INFO] Setting the data phase to 34 for uplink 8
+[INFO] Data Phase: 0  BBB  
+[INFO] Setting the data phase to 0 for uplink 9
+[INFO] Data Phase: 37  BBB  
+[INFO] Setting the data phase to 37 for uplink 10
+[INFO] Data Phase: 1  BBB  
+[INFO] Setting the data phase to 1 for uplink 11
+[INFO] Data Phase: 39  BBB  
+[INFO] Setting the data phase to 39 for uplink 12
+[INFO] Data Phase: 2  BBB  
+[INFO] Setting the data phase to 2 for uplink 13
+[INFO] Data Phase: 38  BBB  
+[INFO] Setting the data phase to 38 for uplink 14
+[INFO] Data Phase: 0  BBB  
+[INFO] Setting the data phase to 0 for uplink 15
+[INFO] post set
+ 
+Setup Element:
+  Group: 0
+  Downlink: 1
+  Uplinks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  ASICs Map: None
+  Clock Phase Characteristic:
+    Optimal Phase: 44
+    Window Length: 65
+    Eye Windows:
+      Uplink  0: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  1: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  2: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  3: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  4: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  5: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  6: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  7: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  8: XXXXXXXXX____________________________________________________________________XXX
+      Uplink  9: XXXXXXXXX____________________________________________________________________XXX
+      Uplink 10: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 11: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 12: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 13: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 14: XXXXXXXXX_______________________________________________________________________
+      Uplink 15: XXXXXXXXX_______________________________________________________________________
+  Data phase characteristics:
+    Uplink 0:
+      Optimal Phase: 23
+      Window Length: 34
+      Eye Window: _XXXXXX_________________________________
+    Uplink 1:
+      Optimal Phase: 18
+      Window Length: 36
+      Eye Window: X____________________________________XXX
+    Uplink 2:
+      Optimal Phase: 18
+      Window Length: 34
+      Eye Window: XX__________________________________XXXX
+    Uplink 3:
+      Optimal Phase: 15
+      Window Length: 36
+      Eye Window: __________________________________XXXX__
+    Uplink 4:
+      Optimal Phase: 14
+      Window Length: 36
+      Eye Window: _________________________________XXXX___
+    Uplink 5:
+      Optimal Phase: 10
+      Window Length: 36
+      Eye Window: _____________________________XXXX_______
+    Uplink 6:
+      Optimal Phase: 10
+      Window Length: 34
+      Eye Window: ____________________________XXXXXX______
+    Uplink 7:
+      Optimal Phase: 6
+      Window Length: 34
+      Eye Window: ________________________XXXXXX__________
+    Uplink 8:
+      Optimal Phase: 34
+      Window Length: 34
+      Eye Window: ____________XXXXXX______________________
+    Uplink 9:
+      Optimal Phase: 0
+      Window Length: 35
+      Eye Window: __________________XXXXX_________________
+    Uplink 10:
+      Optimal Phase: 37
+      Window Length: 35
+      Eye Window: _______________XXXXX____________________
+    Uplink 11:
+      Optimal Phase: 1
+      Window Length: 35
+      Eye Window: ___________________XXXXX________________
+    Uplink 12:
+      Optimal Phase: 39
+      Window Length: 36
+      Eye Window: __________________XXXX__________________
+    Uplink 13:
+      Optimal Phase: 2
+      Window Length: 36
+      Eye Window: _____________________XXXX_______________
+    Uplink 14:
+      Optimal Phase: 38
+      Window Length: 35
+      Eye Window: ________________XXXXX___________________
+    Uplink 15:
+      Optimal Phase: 0
+      Window Length: 35
+      Eye Window: __________________XXXXX_________________
+
+[INFO] Scanning data phases
+[INFO] Setting encoding mode SOS for groups [0], downlinks [2]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [2]
+[INFO] Data phase scan results for group 0, downlink 2
+[INFO] Eye window for uplink 16: XXXXXXX______________________XXXXXXXXXXX
+Data delay found: 17
+[INFO] Eye window for uplink 17: XXXXX_____________________________X_XXXX
+Data delay found: 19
+[INFO] Eye window for uplink 18: XXXXXXXX________________________________
+Data delay found: 23
+[INFO] Eye window for uplink 19: XXXXXXX______________________________XXX
+Data delay found: 21
+[INFO] Eye window for uplink 20: _XXXXXXXX_______________________________
+Data delay found: 24
+[INFO] Eye window for uplink 21: XXXXXXX____________________________X___X
+Data delay found: 20
+[INFO] Eye window for uplink 22: XXXXXXX_________________________________
+Data delay found: 23
+[INFO] Eye window for uplink 23: XXXX________________________________XXXX
+Data delay found: 19
+[INFO] Eye window for uplink 24: ___XXXXXXXXXXX__________________________
+Data delay found: 28
+[INFO] Eye window for uplink 25: ______XXXXXXXXXXXX______________________
+Data delay found: 31
+[INFO] Eye window for uplink 26: ______XXXXXXXXXXX_______________________
+Data delay found: 31
+[INFO] Eye window for uplink 27: _________X__XXXXXXXXXX__________________
+Data delay found: 35
+[INFO] Eye window for uplink 28: _________X_XXXXXXXXXX___________________
+Data delay found: 34
+[INFO] Eye window for uplink 29: _________X____XXXXXXXXXX________________
+Data delay found: 36
+[INFO] Eye window for uplink 30: ______________X__XXXXXXXX_______________
+Data delay found: 39
+[INFO] Eye window for uplink 31: _______________X__XXXXXXXX______________
+Data delay found: 0
+[INFO] post char data phase
+ 
+Setup Element:
+  Group: 0
+  Downlink: 2
+  Uplinks: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  ASICs Map: None
+  Clock Phase Characteristic:
+    Optimal Phase: 64
+    Window Length: 50
+    Eye Windows:
+      Uplink 16: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 17: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 18: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 19: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 20: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 21: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 22: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 23: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 24: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 25: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 26: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 27: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 28: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X_X________________________________________
+      Uplink 29: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 30: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 31: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+  Data phase characteristics:
+    Uplink 16:
+      Optimal Phase: 17
+      Window Length: 22
+      Eye Window: XXXXXXX______________________XXXXXXXXXXX
+    Uplink 17:
+      Optimal Phase: 19
+      Window Length: 29
+      Eye Window: XXXXX_____________________________X_XXXX
+    Uplink 18:
+      Optimal Phase: 23
+      Window Length: 32
+      Eye Window: XXXXXXXX________________________________
+    Uplink 19:
+      Optimal Phase: 21
+      Window Length: 30
+      Eye Window: XXXXXXX______________________________XXX
+    Uplink 20:
+      Optimal Phase: 24
+      Window Length: 32
+      Eye Window: _XXXXXXXX_______________________________
+    Uplink 21:
+      Optimal Phase: 20
+      Window Length: 28
+      Eye Window: XXXXXXX____________________________X___X
+    Uplink 22:
+      Optimal Phase: 23
+      Window Length: 33
+      Eye Window: XXXXXXX_________________________________
+    Uplink 23:
+      Optimal Phase: 19
+      Window Length: 32
+      Eye Window: XXXX________________________________XXXX
+    Uplink 24:
+      Optimal Phase: 28
+      Window Length: 29
+      Eye Window: ___XXXXXXXXXXX__________________________
+    Uplink 25:
+      Optimal Phase: 31
+      Window Length: 28
+      Eye Window: ______XXXXXXXXXXXX______________________
+    Uplink 26:
+      Optimal Phase: 31
+      Window Length: 29
+      Eye Window: ______XXXXXXXXXXX_______________________
+    Uplink 27:
+      Optimal Phase: 35
+      Window Length: 27
+      Eye Window: _________X__XXXXXXXXXX__________________
+    Uplink 28:
+      Optimal Phase: 34
+      Window Length: 28
+      Eye Window: _________X_XXXXXXXXXX___________________
+    Uplink 29:
+      Optimal Phase: 36
+      Window Length: 25
+      Eye Window: _________X____XXXXXXXXXX________________
+    Uplink 30:
+      Optimal Phase: 39
+      Window Length: 29
+      Eye Window: ______________X__XXXXXXXX_______________
+    Uplink 31:
+      Optimal Phase: 0
+      Window Length: 29
+      Eye Window: _______________X__XXXXXXXX______________
+
+[INFO] Data Phase: 17  BBB  
+[INFO] Setting the data phase to 17 for uplink 16
+[INFO] Data Phase: 19  BBB  
+[INFO] Setting the data phase to 19 for uplink 17
+[INFO] Data Phase: 23  BBB  
+[INFO] Setting the data phase to 23 for uplink 18
+[INFO] Data Phase: 21  BBB  
+[INFO] Setting the data phase to 21 for uplink 19
+[INFO] Data Phase: 24  BBB  
+[INFO] Setting the data phase to 24 for uplink 20
+[INFO] Data Phase: 20  BBB  
+[INFO] Setting the data phase to 20 for uplink 21
+[INFO] Data Phase: 23  BBB  
+[INFO] Setting the data phase to 23 for uplink 22
+[INFO] Data Phase: 19  BBB  
+[INFO] Setting the data phase to 19 for uplink 23
+[INFO] Data Phase: 28  BBB  
+[INFO] Setting the data phase to 28 for uplink 24
+[INFO] Data Phase: 31  BBB  
+[INFO] Setting the data phase to 31 for uplink 25
+[INFO] Data Phase: 31  BBB  
+[INFO] Setting the data phase to 31 for uplink 26
+[INFO] Data Phase: 35  BBB  
+[INFO] Setting the data phase to 35 for uplink 27
+[INFO] Data Phase: 34  BBB  
+[INFO] Setting the data phase to 34 for uplink 28
+[INFO] Data Phase: 36  BBB  
+[INFO] Setting the data phase to 36 for uplink 29
+[INFO] Data Phase: 39  BBB  
+[INFO] Setting the data phase to 39 for uplink 30
+[INFO] Data Phase: 0  BBB  
+[INFO] Setting the data phase to 0 for uplink 31
+[INFO] post set
+ 
+Setup Element:
+  Group: 0
+  Downlink: 2
+  Uplinks: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  ASICs Map: None
+  Clock Phase Characteristic:
+    Optimal Phase: 64
+    Window Length: 50
+    Eye Windows:
+      Uplink 16: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 17: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 18: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 19: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 20: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 21: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 22: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 23: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 24: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 25: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 26: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 27: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 28: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X_X________________________________________
+      Uplink 29: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 30: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 31: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+  Data phase characteristics:
+    Uplink 16:
+      Optimal Phase: 17
+      Window Length: 22
+      Eye Window: XXXXXXX______________________XXXXXXXXXXX
+    Uplink 17:
+      Optimal Phase: 19
+      Window Length: 29
+      Eye Window: XXXXX_____________________________X_XXXX
+    Uplink 18:
+      Optimal Phase: 23
+      Window Length: 32
+      Eye Window: XXXXXXXX________________________________
+    Uplink 19:
+      Optimal Phase: 21
+      Window Length: 30
+      Eye Window: XXXXXXX______________________________XXX
+    Uplink 20:
+      Optimal Phase: 24
+      Window Length: 32
+      Eye Window: _XXXXXXXX_______________________________
+    Uplink 21:
+      Optimal Phase: 20
+      Window Length: 28
+      Eye Window: XXXXXXX____________________________X___X
+    Uplink 22:
+      Optimal Phase: 23
+      Window Length: 33
+      Eye Window: XXXXXXX_________________________________
+    Uplink 23:
+      Optimal Phase: 19
+      Window Length: 32
+      Eye Window: XXXX________________________________XXXX
+    Uplink 24:
+      Optimal Phase: 28
+      Window Length: 29
+      Eye Window: ___XXXXXXXXXXX__________________________
+    Uplink 25:
+      Optimal Phase: 31
+      Window Length: 28
+      Eye Window: ______XXXXXXXXXXXX______________________
+    Uplink 26:
+      Optimal Phase: 31
+      Window Length: 29
+      Eye Window: ______XXXXXXXXXXX_______________________
+    Uplink 27:
+      Optimal Phase: 35
+      Window Length: 27
+      Eye Window: _________X__XXXXXXXXXX__________________
+    Uplink 28:
+      Optimal Phase: 34
+      Window Length: 28
+      Eye Window: _________X_XXXXXXXXXX___________________
+    Uplink 29:
+      Optimal Phase: 36
+      Window Length: 25
+      Eye Window: _________X____XXXXXXXXXX________________
+    Uplink 30:
+      Optimal Phase: 39
+      Window Length: 29
+      Eye Window: ______________X__XXXXXXXX_______________
+    Uplink 31:
+      Optimal Phase: 0
+      Window Length: 29
+      Eye Window: _______________X__XXXXXXXX______________
+
+[INFO] Beginning SMX ASICs map scan
+[INFO] Setting encoding mode SOS for groups [0], downlinks [1]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [1]
+[INFO] Setting encoding mode EOS for groups [0], downlinks [1]
+[INFO] Setting encoding mode FRAME for groups [0], downlinks [1]
+[INFO] Setting uplinks mask [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+[INFO] Adding ASIC 0x0, ASIC uplink 0, uplink 1
+[INFO] Adding ASIC 0x0, ASIC uplink 1, uplink 0
+[INFO] Adding ASIC 0x1, ASIC uplink 0, uplink 8
+[INFO] Adding ASIC 0x1, ASIC uplink 1, uplink 9
+[INFO] Adding ASIC 0x2, ASIC uplink 0, uplink 3
+[INFO] Adding ASIC 0x2, ASIC uplink 1, uplink 2
+[INFO] Adding ASIC 0x3, ASIC uplink 0, uplink 10
+[INFO] Adding ASIC 0x3, ASIC uplink 1, uplink 11
+[INFO] Adding ASIC 0x4, ASIC uplink 0, uplink 5
+[INFO] Adding ASIC 0x4, ASIC uplink 1, uplink 4
+[INFO] Adding ASIC 0x5, ASIC uplink 0, uplink 12
+[INFO] Adding ASIC 0x5, ASIC uplink 1, uplink 13
+[INFO] Adding ASIC 0x6, ASIC uplink 0, uplink 7
+[INFO] Adding ASIC 0x6, ASIC uplink 1, uplink 6
+[INFO] Adding ASIC 0x7, ASIC uplink 0, uplink 14
+[INFO] Adding ASIC 0x7, ASIC uplink 1, uplink 15
+[INFO] post scan map|n 
+Setup Element:
+  Group: 0
+  Downlink: 1
+  Uplinks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  ASICs Map:
+    ASIC address 0x0: (ASIC uplink, uplink): (0, 1), (1, 0)
+    ASIC address 0x1: (ASIC uplink, uplink): (0, 8), (1, 9)
+    ASIC address 0x2: (ASIC uplink, uplink): (0, 3), (1, 2)
+    ASIC address 0x3: (ASIC uplink, uplink): (0, 10), (1, 11)
+    ASIC address 0x4: (ASIC uplink, uplink): (0, 5), (1, 4)
+    ASIC address 0x5: (ASIC uplink, uplink): (0, 12), (1, 13)
+    ASIC address 0x6: (ASIC uplink, uplink): (0, 7), (1, 6)
+    ASIC address 0x7: (ASIC uplink, uplink): (0, 14), (1, 15)
+  Clock Phase Characteristic:
+    Optimal Phase: 44
+    Window Length: 65
+    Eye Windows:
+      Uplink  0: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  1: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  2: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  3: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  4: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  5: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  6: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  7: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  8: XXXXXXXXX____________________________________________________________________XXX
+      Uplink  9: XXXXXXXXX____________________________________________________________________XXX
+      Uplink 10: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 11: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 12: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 13: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 14: XXXXXXXXX_______________________________________________________________________
+      Uplink 15: XXXXXXXXX_______________________________________________________________________
+  Data phase characteristics:
+    Uplink 0:
+      Optimal Phase: 23
+      Window Length: 34
+      Eye Window: _XXXXXX_________________________________
+    Uplink 1:
+      Optimal Phase: 18
+      Window Length: 36
+      Eye Window: X____________________________________XXX
+    Uplink 2:
+      Optimal Phase: 18
+      Window Length: 34
+      Eye Window: XX__________________________________XXXX
+    Uplink 3:
+      Optimal Phase: 15
+      Window Length: 36
+      Eye Window: __________________________________XXXX__
+    Uplink 4:
+      Optimal Phase: 14
+      Window Length: 36
+      Eye Window: _________________________________XXXX___
+    Uplink 5:
+      Optimal Phase: 10
+      Window Length: 36
+      Eye Window: _____________________________XXXX_______
+    Uplink 6:
+      Optimal Phase: 10
+      Window Length: 34
+      Eye Window: ____________________________XXXXXX______
+    Uplink 7:
+      Optimal Phase: 6
+      Window Length: 34
+      Eye Window: ________________________XXXXXX__________
+    Uplink 8:
+      Optimal Phase: 34
+      Window Length: 34
+      Eye Window: ____________XXXXXX______________________
+    Uplink 9:
+      Optimal Phase: 0
+      Window Length: 35
+      Eye Window: __________________XXXXX_________________
+    Uplink 10:
+      Optimal Phase: 37
+      Window Length: 35
+      Eye Window: _______________XXXXX____________________
+    Uplink 11:
+      Optimal Phase: 1
+      Window Length: 35
+      Eye Window: ___________________XXXXX________________
+    Uplink 12:
+      Optimal Phase: 39
+      Window Length: 36
+      Eye Window: __________________XXXX__________________
+    Uplink 13:
+      Optimal Phase: 2
+      Window Length: 36
+      Eye Window: _____________________XXXX_______________
+    Uplink 14:
+      Optimal Phase: 38
+      Window Length: 35
+      Eye Window: ________________XXXXX___________________
+    Uplink 15:
+      Optimal Phase: 0
+      Window Length: 35
+      Eye Window: __________________XXXXX_________________
+
+[INFO] Beginning SMX ASICs map scan
+[INFO] Setting encoding mode SOS for groups [0], downlinks [2]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [2]
+[INFO] Setting encoding mode EOS for groups [0], downlinks [2]
+[INFO] Setting encoding mode FRAME for groups [0], downlinks [2]
+[INFO] Setting uplinks mask [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+[INFO] Adding ASIC 0x0, ASIC uplink 0, uplink 23
+[INFO] Adding ASIC 0x0, ASIC uplink 1, uplink 22
+[INFO] Adding ASIC 0x1, ASIC uplink 0, uplink 30
+[INFO] Adding ASIC 0x1, ASIC uplink 1, uplink 31
+[INFO] Adding ASIC 0x2, ASIC uplink 0, uplink 21
+[INFO] Adding ASIC 0x2, ASIC uplink 1, uplink 20
+[INFO] Adding ASIC 0x3, ASIC uplink 0, uplink 28
+[INFO] Adding ASIC 0x3, ASIC uplink 1, uplink 29
+[INFO] Adding ASIC 0x4, ASIC uplink 0, uplink 19
+[INFO] Adding ASIC 0x4, ASIC uplink 1, uplink 18
+[INFO] Adding ASIC 0x5, ASIC uplink 0, uplink 26
+[INFO] Adding ASIC 0x5, ASIC uplink 1, uplink 27
+[INFO] Adding ASIC 0x6, ASIC uplink 0, uplink 17
+[INFO] Adding ASIC 0x6, ASIC uplink 1, uplink 16
+[INFO] Adding ASIC 0x7, ASIC uplink 0, uplink 24
+[INFO] Adding ASIC 0x7, ASIC uplink 1, uplink 25
+[INFO] post scan map|n 
+Setup Element:
+  Group: 0
+  Downlink: 2
+  Uplinks: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  ASICs Map:
+    ASIC address 0x0: (ASIC uplink, uplink): (0, 23), (1, 22)
+    ASIC address 0x1: (ASIC uplink, uplink): (0, 30), (1, 31)
+    ASIC address 0x2: (ASIC uplink, uplink): (0, 21), (1, 20)
+    ASIC address 0x3: (ASIC uplink, uplink): (0, 28), (1, 29)
+    ASIC address 0x4: (ASIC uplink, uplink): (0, 19), (1, 18)
+    ASIC address 0x5: (ASIC uplink, uplink): (0, 26), (1, 27)
+    ASIC address 0x6: (ASIC uplink, uplink): (0, 17), (1, 16)
+    ASIC address 0x7: (ASIC uplink, uplink): (0, 24), (1, 25)
+  Clock Phase Characteristic:
+    Optimal Phase: 64
+    Window Length: 50
+    Eye Windows:
+      Uplink 16: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 17: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 18: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 19: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 20: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 21: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 22: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 23: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 24: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 25: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 26: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 27: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 28: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X_X________________________________________
+      Uplink 29: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 30: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 31: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+  Data phase characteristics:
+    Uplink 16:
+      Optimal Phase: 17
+      Window Length: 22
+      Eye Window: XXXXXXX______________________XXXXXXXXXXX
+    Uplink 17:
+      Optimal Phase: 19
+      Window Length: 29
+      Eye Window: XXXXX_____________________________X_XXXX
+    Uplink 18:
+      Optimal Phase: 23
+      Window Length: 32
+      Eye Window: XXXXXXXX________________________________
+    Uplink 19:
+      Optimal Phase: 21
+      Window Length: 30
+      Eye Window: XXXXXXX______________________________XXX
+    Uplink 20:
+      Optimal Phase: 24
+      Window Length: 32
+      Eye Window: _XXXXXXXX_______________________________
+    Uplink 21:
+      Optimal Phase: 20
+      Window Length: 28
+      Eye Window: XXXXXXX____________________________X___X
+    Uplink 22:
+      Optimal Phase: 23
+      Window Length: 33
+      Eye Window: XXXXXXX_________________________________
+    Uplink 23:
+      Optimal Phase: 19
+      Window Length: 32
+      Eye Window: XXXX________________________________XXXX
+    Uplink 24:
+      Optimal Phase: 28
+      Window Length: 29
+      Eye Window: ___XXXXXXXXXXX__________________________
+    Uplink 25:
+      Optimal Phase: 31
+      Window Length: 28
+      Eye Window: ______XXXXXXXXXXXX______________________
+    Uplink 26:
+      Optimal Phase: 31
+      Window Length: 29
+      Eye Window: ______XXXXXXXXXXX_______________________
+    Uplink 27:
+      Optimal Phase: 35
+      Window Length: 27
+      Eye Window: _________X__XXXXXXXXXX__________________
+    Uplink 28:
+      Optimal Phase: 34
+      Window Length: 28
+      Eye Window: _________X_XXXXXXXXXX___________________
+    Uplink 29:
+      Optimal Phase: 36
+      Window Length: 25
+      Eye Window: _________X____XXXXXXXXXX________________
+    Uplink 30:
+      Optimal Phase: 39
+      Window Length: 29
+      Eye Window: ______________X__XXXXXXXX_______________
+    Uplink 31:
+      Optimal Phase: 0
+      Window Length: 29
+      Eye Window: _______________X__XXXXXXXX______________
+
+[INFO] Performing Elink synchronization
+[INFO] Setting encoding mode SOS for groups [0], downlinks [1]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [1]
+[INFO] Setting encoding mode EOS for groups [0], downlinks [1]
+[INFO] Setting encoding mode FRAME for groups [0], downlinks [1]
+[INFO] Performing Elink synchronization
+[INFO] Setting encoding mode SOS for groups [0], downlinks [2]
+[INFO] Setting encoding mode K.28.1 for groups [0], downlinks [2]
+[INFO] Setting encoding mode EOS for groups [0], downlinks [2]
+[INFO] Setting encoding mode FRAME for groups [0], downlinks [2]
+[INFO] Writing SMX Elink masks for group 0, downlink 1
+[INFO] Enabling uplinks [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+[INFO] 
+Setup Element:
+  Group: 0
+  Downlink: 1
+  Uplinks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  ASICs Map:
+    ASIC address 0x0: (ASIC uplink, uplink): (0, 1), (1, 0)
+    ASIC address 0x1: (ASIC uplink, uplink): (0, 8), (1, 9)
+    ASIC address 0x2: (ASIC uplink, uplink): (0, 3), (1, 2)
+    ASIC address 0x3: (ASIC uplink, uplink): (0, 10), (1, 11)
+    ASIC address 0x4: (ASIC uplink, uplink): (0, 5), (1, 4)
+    ASIC address 0x5: (ASIC uplink, uplink): (0, 12), (1, 13)
+    ASIC address 0x6: (ASIC uplink, uplink): (0, 7), (1, 6)
+    ASIC address 0x7: (ASIC uplink, uplink): (0, 14), (1, 15)
+  Clock Phase Characteristic:
+    Optimal Phase: 44
+    Window Length: 65
+    Eye Windows:
+      Uplink  0: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  1: _XXXXXXXXXXX____________________________________________________________________
+      Uplink  2: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  3: XXXXXXXXXXX_____________________________________________________________________
+      Uplink  4: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  5: XXXXXXXXXXX____________________________________________________________________X
+      Uplink  6: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  7: _XXXXXXXXXX_____________________________________________________________________
+      Uplink  8: XXXXXXXXX____________________________________________________________________XXX
+      Uplink  9: XXXXXXXXX____________________________________________________________________XXX
+      Uplink 10: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 11: XXXXXXXXXX____________________________________________________________________XX
+      Uplink 12: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 13: XXXXXXXXXXX_____________________________________________________________________
+      Uplink 14: XXXXXXXXX_______________________________________________________________________
+      Uplink 15: XXXXXXXXX_______________________________________________________________________
+  Data phase characteristics:
+    Uplink 0:
+      Optimal Phase: 23
+      Window Length: 34
+      Eye Window: _XXXXXX_________________________________
+    Uplink 1:
+      Optimal Phase: 18
+      Window Length: 36
+      Eye Window: X____________________________________XXX
+    Uplink 2:
+      Optimal Phase: 18
+      Window Length: 34
+      Eye Window: XX__________________________________XXXX
+    Uplink 3:
+      Optimal Phase: 15
+      Window Length: 36
+      Eye Window: __________________________________XXXX__
+    Uplink 4:
+      Optimal Phase: 14
+      Window Length: 36
+      Eye Window: _________________________________XXXX___
+    Uplink 5:
+      Optimal Phase: 10
+      Window Length: 36
+      Eye Window: _____________________________XXXX_______
+    Uplink 6:
+      Optimal Phase: 10
+      Window Length: 34
+      Eye Window: ____________________________XXXXXX______
+    Uplink 7:
+      Optimal Phase: 6
+      Window Length: 34
+      Eye Window: ________________________XXXXXX__________
+    Uplink 8:
+      Optimal Phase: 34
+      Window Length: 34
+      Eye Window: ____________XXXXXX______________________
+    Uplink 9:
+      Optimal Phase: 0
+      Window Length: 35
+      Eye Window: __________________XXXXX_________________
+    Uplink 10:
+      Optimal Phase: 37
+      Window Length: 35
+      Eye Window: _______________XXXXX____________________
+    Uplink 11:
+      Optimal Phase: 1
+      Window Length: 35
+      Eye Window: ___________________XXXXX________________
+    Uplink 12:
+      Optimal Phase: 39
+      Window Length: 36
+      Eye Window: __________________XXXX__________________
+    Uplink 13:
+      Optimal Phase: 2
+      Window Length: 36
+      Eye Window: _____________________XXXX_______________
+    Uplink 14:
+      Optimal Phase: 38
+      Window Length: 35
+      Eye Window: ________________XXXXX___________________
+    Uplink 15:
+      Optimal Phase: 0
+      Window Length: 35
+      Eye Window: __________________XXXXX_________________
+
+[INFO] dict_items([(0, {'ASIC uplinks': [0, 1], 'uplinks': [1, 0], 'uplinks map': [(0, 1), (1, 0)]}), (1, {'ASIC uplinks': [0, 1], 'uplinks': [8, 9], 'uplinks map': [(0, 8), (1, 9)]}), (2, {'ASIC uplinks': [0, 1], 'uplinks': [3, 2], 'uplinks map': [(0, 3), (1, 2)]}), (3, {'ASIC uplinks': [0, 1], 'uplinks': [10, 11], 'uplinks map': [(0, 10), (1, 11)]}), (4, {'ASIC uplinks': [0, 1], 'uplinks': [5, 4], 'uplinks map': [(0, 5), (1, 4)]}), (5, {'ASIC uplinks': [0, 1], 'uplinks': [12, 13], 'uplinks map': [(0, 12), (1, 13)]}), (6, {'ASIC uplinks': [0, 1], 'uplinks': [7, 6], 'uplinks map': [(0, 7), (1, 6)]}), (7, {'ASIC uplinks': [0, 1], 'uplinks': [14, 15], 'uplinks map': [(0, 14), (1, 15)]})])
+[INFO] Writing mask 0b1110011100 for ASIC 0x0  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x1  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x2  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x3  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x4  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x5  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x6  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x7  [0, 1]
+[INFO] Writing SMX Elink masks for group 0, downlink 2
+[INFO] Enabling uplinks [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+[INFO] 
+Setup Element:
+  Group: 0
+  Downlink: 2
+  Uplinks: [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  ASICs Map:
+    ASIC address 0x0: (ASIC uplink, uplink): (0, 23), (1, 22)
+    ASIC address 0x1: (ASIC uplink, uplink): (0, 30), (1, 31)
+    ASIC address 0x2: (ASIC uplink, uplink): (0, 21), (1, 20)
+    ASIC address 0x3: (ASIC uplink, uplink): (0, 28), (1, 29)
+    ASIC address 0x4: (ASIC uplink, uplink): (0, 19), (1, 18)
+    ASIC address 0x5: (ASIC uplink, uplink): (0, 26), (1, 27)
+    ASIC address 0x6: (ASIC uplink, uplink): (0, 17), (1, 16)
+    ASIC address 0x7: (ASIC uplink, uplink): (0, 24), (1, 25)
+  Clock Phase Characteristic:
+    Optimal Phase: 64
+    Window Length: 50
+    Eye Windows:
+      Uplink 16: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 17: __________XXXXXXXXXXXXXXXXXX____________________________________________________
+      Uplink 18: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 19: ___________XXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 20: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 21: ___________XXXXXXXXXXXXXXXXX_X__________________________________________________
+      Uplink 22: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 23: __________XXXXXXXXXXXXXXXXX_____________________________________________________
+      Uplink 24: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 25: __________XXXXXXXXXXXXXXXXXXXXXX_XX_____________________________________________
+      Uplink 26: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 27: __________XXXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 28: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X_X________________________________________
+      Uplink 29: ___________XXXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 30: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+      Uplink 31: ____________XXXXXXXXXXXXXXXXXXXXXXXX_X__________________________________________
+  Data phase characteristics:
+    Uplink 16:
+      Optimal Phase: 17
+      Window Length: 22
+      Eye Window: XXXXXXX______________________XXXXXXXXXXX
+    Uplink 17:
+      Optimal Phase: 19
+      Window Length: 29
+      Eye Window: XXXXX_____________________________X_XXXX
+    Uplink 18:
+      Optimal Phase: 23
+      Window Length: 32
+      Eye Window: XXXXXXXX________________________________
+    Uplink 19:
+      Optimal Phase: 21
+      Window Length: 30
+      Eye Window: XXXXXXX______________________________XXX
+    Uplink 20:
+      Optimal Phase: 24
+      Window Length: 32
+      Eye Window: _XXXXXXXX_______________________________
+    Uplink 21:
+      Optimal Phase: 20
+      Window Length: 28
+      Eye Window: XXXXXXX____________________________X___X
+    Uplink 22:
+      Optimal Phase: 23
+      Window Length: 33
+      Eye Window: XXXXXXX_________________________________
+    Uplink 23:
+      Optimal Phase: 19
+      Window Length: 32
+      Eye Window: XXXX________________________________XXXX
+    Uplink 24:
+      Optimal Phase: 28
+      Window Length: 29
+      Eye Window: ___XXXXXXXXXXX__________________________
+    Uplink 25:
+      Optimal Phase: 31
+      Window Length: 28
+      Eye Window: ______XXXXXXXXXXXX______________________
+    Uplink 26:
+      Optimal Phase: 31
+      Window Length: 29
+      Eye Window: ______XXXXXXXXXXX_______________________
+    Uplink 27:
+      Optimal Phase: 35
+      Window Length: 27
+      Eye Window: _________X__XXXXXXXXXX__________________
+    Uplink 28:
+      Optimal Phase: 34
+      Window Length: 28
+      Eye Window: _________X_XXXXXXXXXX___________________
+    Uplink 29:
+      Optimal Phase: 36
+      Window Length: 25
+      Eye Window: _________X____XXXXXXXXXX________________
+    Uplink 30:
+      Optimal Phase: 39
+      Window Length: 29
+      Eye Window: ______________X__XXXXXXXX_______________
+    Uplink 31:
+      Optimal Phase: 0
+      Window Length: 29
+      Eye Window: _______________X__XXXXXXXX______________
+
+[INFO] dict_items([(0, {'ASIC uplinks': [0, 1], 'uplinks': [23, 22], 'uplinks map': [(0, 23), (1, 22)]}), (1, {'ASIC uplinks': [0, 1], 'uplinks': [30, 31], 'uplinks map': [(0, 30), (1, 31)]}), (2, {'ASIC uplinks': [0, 1], 'uplinks': [21, 20], 'uplinks map': [(0, 21), (1, 20)]}), (3, {'ASIC uplinks': [0, 1], 'uplinks': [28, 29], 'uplinks map': [(0, 28), (1, 29)]}), (4, {'ASIC uplinks': [0, 1], 'uplinks': [19, 18], 'uplinks map': [(0, 19), (1, 18)]}), (5, {'ASIC uplinks': [0, 1], 'uplinks': [26, 27], 'uplinks map': [(0, 26), (1, 27)]}), (6, {'ASIC uplinks': [0, 1], 'uplinks': [17, 16], 'uplinks map': [(0, 17), (1, 16)]}), (7, {'ASIC uplinks': [0, 1], 'uplinks': [24, 25], 'uplinks map': [(0, 24), (1, 25)]})])
+[INFO] Writing mask 0b1110011100 for ASIC 0x0  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x1  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x2  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x3  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x4  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x5  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x6  [0, 1]
+[INFO] Writing mask 0b1110011100 for ASIC 0x7  [0, 1]
+[INFO] smxes_tmp: 8
+[INFO] smxes_tmp: 8
+[INFO] Number of setup elements: 2
+[INFO] Number of smx: 16
+[INFO] 
+[INFO] Asic (emu 234   downlink 1   hw_addr 0): 
+[INFO] Asic (emu 234   downlink 1   hw_addr 1): 
+[INFO] Asic (emu 234   downlink 1   hw_addr 2): 
+[INFO] Asic (emu 234   downlink 1   hw_addr 3): 
+[INFO] Asic (emu 234   downlink 1   hw_addr 4): 
+[INFO] Asic (emu 234   downlink 1   hw_addr 5): 
+[INFO] Asic (emu 234   downlink 1   hw_addr 6): 
+[INFO] Asic (emu 234   downlink 1   hw_addr 7): 
+[INFO] Asic (emu 234   downlink 2   hw_addr 0): 
+[INFO] Asic (emu 234   downlink 2   hw_addr 1): 
+[INFO] Asic (emu 234   downlink 2   hw_addr 2): 
+[INFO] Asic (emu 234   downlink 2   hw_addr 3): 
+[INFO] Asic (emu 234   downlink 2   hw_addr 4): 
+[INFO] Asic (emu 234   downlink 2   hw_addr 5): 
+[INFO] Asic (emu 234   downlink 2   hw_addr 6): 
+[INFO] Asic (emu 234   downlink 2   hw_addr 7): 
+[INFO] ----------------------- SKIPPING TEST: #turn_hv_on -------------------------- 
+[INFO]  ---------------------- READING LV VALUES BEFORE CONFIGURATION------------------------- 
+[INFO]  ------------- LOADING STANDARD CONFIGURATION --------------------- 
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 7 and polarity N-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-250-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 131
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 6 and polarity N-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-002-012-07
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 131
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 5 and polarity N-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-251-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 131
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 4 and polarity N-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-002-011-07
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 131
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 3 and polarity N-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-002-047-09
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 131
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 2 and polarity N-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-002-014-07
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 131
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 1 and polarity N-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-002-013-07
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 131
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 0 and polarity N-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-002-015-07
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 131
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 1 and polarity P-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-240-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 163
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 0 and polarity P-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-243-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 163
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 3 and polarity P-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-241-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 163
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 2 and polarity P-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-247-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 163
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 5 and polarity P-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-245-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 163
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 4 and polarity P-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-248-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 163
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 7 and polarity P-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-244-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 163
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] --> SETTING STANDARD CONFIGURATION for ASIC with HW address 6 and polarity P-side
+[INFO] ASIC E-fused ID: XA-000-08-003-000-001-249-15
+[INFO] reading 130, 0:  31
+[INFO] reading 130, 1:  20
+[INFO] reading 130, 2: 163
+[INFO] reading 130, 3:  31
+[INFO] reading 130, 4:   0
+[INFO] reading 130, 5:   0
+[INFO] reading 130, 6:  31
+[INFO] reading 130, 7:  40
+[INFO] reading 130, 8:  22
+[INFO] reading 130, 9:  58
+[INFO] reading 130, 10: 128
+[INFO] reading 130, 11:   0
+[INFO] reading 130, 12:  30
+[INFO] reading 130, 13:  31
+[INFO] reading 130, 14:  27
+[INFO] reading 130, 15:  31
+[INFO] reading 130, 16:  88
+[INFO] reading 130, 17:   0
+[INFO] reading 130, 18: 118
+[INFO] ----------------------- READING ASICs ID -------------------------- 
+[INFO] FEB-ID_		_POLARITY_		_HW-ADDR_		_EFUSE-ID-(STR)_		_EFUSE-ID-(INT)_
+[INFO] 3013A2 		 N-side 		 7 		 XA-000-08-003-000-001-250-15 		 6359364699384979375
+[INFO] 3013A2 		 N-side 		 6 		 XA-000-08-003-000-002-012-07 		 6359364699384979655
+[INFO] 3013A2 		 N-side 		 5 		 XA-000-08-003-000-001-251-15 		 6359364699384979391
+[INFO] 3013A2 		 N-side 		 4 		 XA-000-08-003-000-002-011-07 		 6359364699384979639
+[INFO] 3013A2 		 N-side 		 3 		 XA-000-08-003-000-002-047-09 		 6359364699384980217
+[INFO] 3013A2 		 N-side 		 2 		 XA-000-08-003-000-002-014-07 		 6359364699384979687
+[INFO] 3013A2 		 N-side 		 1 		 XA-000-08-003-000-002-013-07 		 6359364699384979671
+[INFO] 3013A2 		 N-side 		 0 		 XA-000-08-003-000-002-015-07 		 6359364699384979703
+[INFO] FEB-ID_		_POLARITY_		_HW-ADDR_		_EFUSE-ID-(STR)_		_EFUSE-ID-(INT)_
+[INFO] 4013B2 		 P-side 		 1 		 XA-000-08-003-000-001-240-15 		 6359364699384979215
+[INFO] 4013B2 		 P-side 		 0 		 XA-000-08-003-000-001-243-15 		 6359364699384979263
+[INFO] 4013B2 		 P-side 		 3 		 XA-000-08-003-000-001-241-15 		 6359364699384979231
+[INFO] 4013B2 		 P-side 		 2 		 XA-000-08-003-000-001-247-15 		 6359364699384979327
+[INFO] 4013B2 		 P-side 		 5 		 XA-000-08-003-000-001-245-15 		 6359364699384979295
+[INFO] 4013B2 		 P-side 		 4 		 XA-000-08-003-000-001-248-15 		 6359364699384979343
+[INFO] 4013B2 		 P-side 		 7 		 XA-000-08-003-000-001-244-15 		 6359364699384979279
+[INFO] 4013B2 		 P-side 		 6 		 XA-000-08-003-000-001-249-15 		 6359364699384979359
+[INFO] ---------------- LOADING DEFAULT TRIM VALUES ---------------------- 
+[INFO] --> SETTING DEFAULT TRIM for ASIC with HW address 0 and polarity N-side
+[INFO]  ---------------------- READING LV VALUES AFTER CONFIGURATION ------------------------- 
+[INFO] -------------- READING VDDM & TEMPERATURE ------------------------- 
+[INFO] FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+[INFO] 3013A2 		 N-side 		 7 			 178 	 1207.4 			 676.5 	 44.4
+[INFO] 3013A2 		 N-side 		 6 			 184 	 1242.6 			 696.7 	 34.9
+[INFO] 3013A2 		 N-side 		 5 			 185 	 1248.4 			 696.7 	 34.9
+[INFO] 3013A2 		 N-side 		 4 			 184 	 1242.6 			 703.4 	 31.7
+[INFO] 3013A2 		 N-side 		 3 			 187 	 1260.1 			 710.1 	 28.6
+[INFO] 3013A2 		 N-side 		 2 			 181 	 1225.0 			 696.7 	 34.9
+[INFO] 3013A2 		 N-side 		 1 			 189 	 1271.7 			 716.8 	 25.4
+[INFO] 3013A2 		 N-side 		 0 			 180 	 1219.1 			 696.7 	 34.9
+[INFO] FEB-ID_		_POLARITY_		_HW-ADDR_	_VDDM POTENTIAL [LSB] | [mV]_		_TEMP [mV] | [C]_
+[INFO] 4013B2 		 P-side 		 1 			 180 	 1219.1 			 696.7 	 34.9
+[INFO] 4013B2 		 P-side 		 0 			 186 	 1254.3 			 710.1 	 28.6
+[INFO] 4013B2 		 P-side 		 3 			 178 	 1207.4 			 683.3 	 41.2
+[INFO] 4013B2 		 P-side 		 2 			 179 	 1213.2 			 683.3 	 41.2
+[INFO] 4013B2 		 P-side 		 5 			 178 	 1207.4 			 676.5 	 44.4
+[INFO] 4013B2 		 P-side 		 4 			 183 	 1236.7 			 696.7 	 34.9
+[INFO] 4013B2 		 P-side 		 7 			 185 	 1248.4 			 710.1 	 28.6
+[INFO] 4013B2 		 P-side 		 6 			 182 	 1230.9 			 690.0 	 38.0
+[INFO] ---------------- LOADING DEFAULT TRIM VALUES ---------------------- 
+[INFO] --> SETTING DEFAULT TRIM for ASIC with HW address 0 and polarity N-side
+[INFO] -------------- FINDING VREF_P, VREF_N & THR@_GLB FOR CALIBRATION ------------------------- 
+[INFO] --> SCANNING VREF_P,N & THR2_GLB for ASIC with HW address 0 and polarity N-side
+[INFO] 30
+[INFO] 247
+[INFO] 30
+[INFO] -------------- SETTING THE CALIBRATION PARAMETERS ------------------------- 
+[INFO] --> CALIBRATION SETTINGS for N-side
+[INFO] HW_address 	 VRef_P 	 VRef_N 	 VRef_T 	 Thr2_glb
+[INFO] 0	56	28	118	56
+[INFO] --> CALIBRATION SETTINGS for P-side
+[INFO] HW_address 	 VRef_P 	 VRef_N 	 VRef_T 	 Thr2_glb
+[INFO] CAL_SETTINGS_N
+[INFO] 0		 0		 56		 28		 118		 1		 56
+[INFO] CAL_SETTINGS_P
+[INFO] -------------- CALIBRATING THE MODULE ------------------------- 
+[INFO] --> RUNNING CALIBRATION FOR ASIC with HW ADDRESS 0 in elect
+[INFO] Calib file name: module_files/M5UL5T2010182B2/trim_files/ftrim_XA-000-08-003-000-002-015-07_HW_0_SET_56_28_118_56_R_30_247_elect
+[INFO]  
+[INFO] ____ELECTRONS MODE____
+[INFO]  
+[INFO] fine_disc   0 itr   0/ 20
+[INFO] fine_disc   0 itr   1/ 20
+[INFO] fine_disc   0 itr   2/ 20
+[INFO] fine_disc   0 itr   3/ 20
+[INFO] fine_disc   0 itr   4/ 20
+[INFO] fine_disc   0 itr   5/ 20

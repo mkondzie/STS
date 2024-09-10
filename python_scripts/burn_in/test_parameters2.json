@@ -1,0 +1,39 @@
+{
+    "modules" :[{
+            "id" : "M4DL2B4001164B2",
+            "feb_p_side" : {
+                "name" : "2097B2",
+                "sn" : 2097,
+                "type" : "B2"
+            },
+            "feb_n_side" : {
+                "name" : "1073A2",
+                "sn" : 1073,
+                "type" : "A2"
+            }
+        }],
+    "binder_config" : {
+        "epics_device" : "CBM:STS:BINDER244",
+        "temp_lower" : -15,
+        "temp_upper" : 20
+    },
+    "lauda_config" : {
+        "epics_device" : "CBM:STS:LAUDA2",
+        "temp_lower" : -20,
+        "temp_upper" : 15
+    },
+    "power_supply" : {
+            "epics_device" : "CBM:STS:WIENLV_U10",
+            "voltage" : [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0],
+            "current" : [3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5],
+            "n_of_channels" : 8
+    },
+    "n_of_thermal_cycles" : 3,
+    "n_of_power_cycles" : {
+        "at_lower" : 5,
+        "at_upper" : 1
+    },
+    "feb_test_script" : "/home/cbm/cbmsoft/emu_test_module/python/feb_test2.py",
+    "output_path" : ""
+
+}

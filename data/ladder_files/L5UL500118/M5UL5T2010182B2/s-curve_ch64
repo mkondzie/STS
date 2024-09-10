@@ -1,0 +1,129 @@
+................ VRef_P,N Scan function ................
+ 
+VRef_T:	118
+ 
+ASIC Efuse XA-000-08-003-000-002-015-07 	 HW Address: 0 	 Polarity 0
+Selected channel:  64  and group  0 
+
+ ........................................................
+ 
+Acquiring data for VRef_P scan 
+vpulse set to amp_cal_min:  30
+ 
+Acquiring data for VRef_N scan 
+vpulse set to amp_cal_max:  240
+ 
+Acquiring data for Thr2_glb scan
+vpulse set to amp_cal_fast:  30
+
+ ..... Vref_P scan results .....
+Test channel:   64
+Vref_P:  45	   0
+Vref_P:  46	   0
+Vref_P:  47	   0
+Vref_P:  48	   0
+Vref_P:  49	   0
+Vref_P:  50	   0
+Vref_P:  51	   0
+Vref_P:  52	   0
+Vref_P:  53	   0
+Vref_P:  54	   0
+Vref_P:  55	   0
+Vref_P:  56	   0
+Vref_P:  57	   0
+Vref_P:  58	   0
+Vref_P:  59	   0
+Vref_P:  60	   0
+
+ ..... Vref_N scan results .....
+Test channel:   64
+Vref_N:  15	   0
+Vref_N:  16	   0
+Vref_N:  17	   0
+Vref_N:  18	   0
+Vref_N:  19	   0
+Vref_N:  20	   0
+Vref_N:  21	   0
+Vref_N:  22	   0
+Vref_N:  23	   0
+Vref_N:  24	   0
+Vref_N:  25	   0
+Vref_N:  26	   0
+Vref_N:  27	   0
+Vref_N:  28	   0
+Vref_N:  29	   0
+Vref_N:  30	   0
+Vref_N:  31	   0
+Vref_N:  32	   0
+Vref_N:  33	   0
+Vref_N:  34	   0
+Vref_N:  35	   0
+Vref_N:  36	   0
+Vref_N:  37	   0
+Vref_N:  38	   0
+Vref_N:  39	   0
+Vref_N:  40	   0
+
+ ..... Thr2_glb scan results .....
+Test channel:   64
+Thr2_glb:  70	4007
+Thr2_glb:  69	3586
+Thr2_glb:  68	1433
+Thr2_glb:  67	2722
+Thr2_glb:  66	1684
+Thr2_glb:  65	 838
+Thr2_glb:  64	3402
+Thr2_glb:  63	 212
+Thr2_glb:  62	3687
+Thr2_glb:  61	2766
+Thr2_glb:  60	1059
+Thr2_glb:  59	3234
+Thr2_glb:  58	1309
+Thr2_glb:  57	3780
+Thr2_glb:  56	 890
+Thr2_glb:  55	3390
+Thr2_glb:  54	 528
+Thr2_glb:  53	 309
+Thr2_glb:  52	3881
+Thr2_glb:  51	1203
+Thr2_glb:  50	1919
+Thr2_glb:  49	2529
+Thr2_glb:  48	2663
+Thr2_glb:  47	1429
+Thr2_glb:  46	   5
+Thr2_glb:  45	2688
+Thr2_glb:  44	1504
+Thr2_glb:  43	3766
+Thr2_glb:  42	 679
+Thr2_glb:  41	2528
+Thr2_glb:  40	1459
+Thr2_glb:  39	3926
+Thr2_glb:  38	 921
+Thr2_glb:  37	1221
+Thr2_glb:  36	2635
+Thr2_glb:  35	 587
+Thr2_glb:  34	1779
+Thr2_glb:  33	3742
+Thr2_glb:  32	 515
+Thr2_glb:  31	4088
+Thr2_glb:  30	1327
+Thr2_glb:  29	2446
+Thr2_glb:  28	 721
+Thr2_glb:  27	 351
+Thr2_glb:  26	2673
+Thr2_glb:  25	1161
+Thr2_glb:  24	2439
+Thr2_glb:  23	2002
+Thr2_glb:  22	1288
+Thr2_glb:  21	 186
+Thr2_glb:  20	2005
+Thr2_glb:  19	 818
+Thr2_glb:  18	3229
+Thr2_glb:  17	4061
+Thr2_glb:  16	3904
+Thr2_glb:  15	3295
+Thr2_glb:  14	2096
+Thr2_glb:  13	2436
+Thr2_glb:  12	1677
+Thr2_glb:  11	2799
+Thr2_glb:  10	 434
