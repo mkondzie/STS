@@ -31,8 +31,6 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <vector>
-// #include <thread>
-// #include <mutex>
 
 TString filename_data;
 std::vector<std::string> file_names;
@@ -44,7 +42,6 @@ std::vector<float> neigh_odd;
 // based on the vicinity of a dynamic threshold
 std::optional<std::vector<Double_t>> sus_even;
 std::optional<std::vector<Double_t>> sus_odd;
-// std::mutex mtx;
 
 void analyze() {
   //! Variables for reading, analyzing data and displaying histograms
@@ -144,32 +141,63 @@ bool file_exists(const std::string &filename) {
 }
 // write the parameters used to find the total number of broken channels
 void write_parameters(float z_alpha, int n_neigh_ch,
+                      std::optional<float> sus_perc,
+                      std::optional<float> n_sigmas,
                       std::size_t n_broken_channels) {
   /* z_alpha - percentage of neighbors' median for the threshold
-   n_neigh_ch - number of channels in the neighborhood for dynamic threshold */
+   n_neigh_ch - number of channels in the neighborhood for dynamic threshold
+   OPTIONAL PARAMETERS FOR SUSPICIOUS CHANNEL DETECTION:
+  sus_perc - percentage of threshold vicinity for determining suspicious
+  channels n_sigmas - accepted deviation from the median of weighted average of
+  suspicious channels' neighbors */
   std::ofstream my_file;
   if (!file_exists("conn_check_parameters.txt")) {
     my_file.open("conn_check_parameters.txt", std::ios::out);
+    if (sus_perc.has_value() && n_sigmas.has_value()) {
+      my_file << std::fixed << std::setw(20) << "z_alpha" << '\t' << std::fixed
+              << std::setw(20) << "n_neigh_ch" << '\t' << std::fixed
+              << std::setw(20) << "sus_perc" << '\t' << std::fixed
+              << std::setw(20) << "n_sigmas" << '\t' << std::fixed
+              << std::setw(20) << "n_broken_channels" << '\n';
 
-    my_file << std::fixed << std::setw(20) << "z_alpha" << '\t' << std::fixed
-            << std::setw(20) << "n_neigh_ch" << '\t' << std::fixed
-            << std::setw(20) << "        " << '\t' << std::fixed
-            << std::setw(20) << "        " << '\t' << std::fixed
-            << std::setw(20) << "n_broken_channels" << '\n';
+      my_file << std::fixed << std::setw(20) << z_alpha << '\t' << std::fixed
+              << std::setw(20) << n_neigh_ch << '\t' << std::fixed
+              << std::setw(20) << sus_perc.value() << '\t' << std::fixed
+              << std::setw(20) << n_sigmas.value() << '\t' << std::fixed
+              << std::setw(20) << n_broken_channels << '\n';
+    }
 
-    my_file << std::fixed << std::setw(20) << z_alpha << '\t' << std::fixed
-            << std::setw(20) << n_neigh_ch << '\t' << std::fixed
-            << std::setw(20) << "        " << '\t' << std::fixed
-            << std::setw(20) << "        " << '\t' << std::fixed
-            << std::setw(20) << n_broken_channels << '\n';
-  } else {
+    else { // if no sus channels are processed
+      my_file << std::fixed << std::setw(20) << "z_alpha" << '\t' << std::fixed
+              << std::setw(20) << "n_neigh_ch" << '\t' << std::fixed
+              << std::setw(20) << "        " << '\t' << std::fixed
+              << std::setw(20) << "        " << '\t' << std::fixed
+              << std::setw(20) << "n_broken_channels" << '\n';
+
+      my_file << std::fixed << std::setw(20) << z_alpha << '\t' << std::fixed
+              << std::setw(20) << n_neigh_ch << '\t' << std::fixed
+              << std::setw(20) << "        " << '\t' << std::fixed
+              << std::setw(20) << "        " << '\t' << std::fixed
+              << std::setw(20) << n_broken_channels << '\n';
+    }
+
+  } else { // if the file exists
     my_file.open("conn_check_parameters.txt", std::ios::app);
+    if (sus_perc.has_value() && n_sigmas.has_value()) {
+      my_file << std::fixed << std::setw(20) << z_alpha << '\t' << std::fixed
+              << std::setw(20) << n_neigh_ch << '\t' << std::fixed
+              << std::setw(20) << sus_perc.value() << '\t' << std::fixed
+              << std::setw(20) << n_sigmas.value() << '\t' << std::fixed
+              << std::setw(20) << n_broken_channels << '\n';
+    }
 
-    my_file << std::fixed << std::setw(20) << z_alpha << '\t' << std::fixed
-            << std::setw(20) << n_neigh_ch << '\t' << std::fixed
-            << std::setw(20) << "        " << '\t' << std::fixed
-            << std::setw(20) << "        " << '\t' << std::fixed
-            << std::setw(20) << n_broken_channels << '\n';
+    else { // if no sus channels are processed
+      my_file << std::fixed << std::setw(20) << z_alpha << '\t' << std::fixed
+              << std::setw(20) << n_neigh_ch << '\t' << std::fixed
+              << std::setw(20) << "        " << '\t' << std::fixed
+              << std::setw(20) << "        " << '\t' << std::fixed
+              << std::setw(20) << n_broken_channels << '\n';
+    }
   }
 
   my_file.close();
@@ -221,7 +249,7 @@ void fill_hist_with_ch(TH1F *hist, std::vector<int> channels, int *ch_hits) {
 }
 
 // ------------------------ Main function ---------------------
-int analysis_conn_check(bool detect_sus_ch = true) {
+int analysis_conn_check(bool detect_sus_ch = false) {
 
   // mtx.lock();
   for (int ch = 0; ch < 128; ch++) {
@@ -423,12 +451,11 @@ int analysis_conn_check(bool detect_sus_ch = true) {
         if (detect_sus_ch) {
           // calculate the median of weighted sum in neighboring channels
           h_med_weighted_av.value().Fill(
-              ch, calculate_median(sus_even.value(), sus_even->size()));
+              ch, calculate_median(sus_even.value(), sus_even.value().size()));
 
           if (ch_hits[ch] > thr_even * n_sigmas.value()) {
             // if the channel is extra noisy it's also masked
-            std::cout << "noisy" << '\n';
-
+            std::cout << "noisy channel " << ch << '\n';
             noisy_channels.value().push_back(ch);
           }
         }
@@ -445,7 +472,8 @@ int analysis_conn_check(bool detect_sus_ch = true) {
           }
         } else if (detect_sus_ch && std::abs(ch_hits[ch] - thr_even) <
                                         thr_even * sus_perc.value()) {
-          std::cout << "sus" << '\n';
+          //  std::cout << "suspicious channel " << ch << '\n';
+
           // if the channel is suspicious based on the vicinity of threshold
           // criteria separate for each channel
           // remembering about the ch + 1 to bin shift
@@ -456,13 +484,8 @@ int analysis_conn_check(bool detect_sus_ch = true) {
             // significantly different than for the suspicious channel
             suspicious_channels.value().push_back(ch);
             broken_channels.push_back(ch);
+            std::cout << "broken suspicious channel " << ch << '\n';
 
-            if (h_ave_hits.GetBinContent(ch + 1) == 0) {
-              //          // No analog response (NAR): broken channel
-              std::cout << "broken sus NAR channel " << ch << '\n';
-            } else {
-              std::cout << "broken sus channel " << ch << '\n';
-            }
           } else {
             suspicious_channels.value().push_back(ch);
           }
@@ -516,7 +539,7 @@ int analysis_conn_check(bool detect_sus_ch = true) {
           }
         } else if (detect_sus_ch && std::abs(ch_hits[ch] - thr_odd) <
                                         thr_odd * sus_perc.value()) {
-          std::cout << "sus" << '\n';
+          //  std::cout << "suspicious channel " << ch << '\n';
 
           // if the channel is suspicious based on the vicinity of threshold
           // criteria separate for each channel
@@ -529,12 +552,8 @@ int analysis_conn_check(bool detect_sus_ch = true) {
             // significantly different
             suspicious_channels.value().push_back(ch);
             broken_channels.push_back(ch);
-            if (h_ave_hits.GetBinContent(ch + 1) == 0) {
-              // No analog response (NAR): broken channel
-              std::cout << "broken sus NAR channel " << ch << '\n';
-            } else {
-              std::cout << "broken sus channel " << ch << '\n';
-            }
+            std::cout << "broken suspicious channel " << ch << '\n';
+
           } else {
             suspicious_channels.value().push_back(ch);
           }
@@ -605,9 +624,9 @@ int analysis_conn_check(bool detect_sus_ch = true) {
     lg_brk_summ->AddEntry(&h_ave_hits, "Noise hits", "l");
     lg_brk_summ->AddEntry(&h_broken_ch, "Broken channels", "p");
     if (detect_sus_ch) {
-      if (suspicious_channels->size() != 0)
+      if (suspicious_channels.value().size() != 0)
         lg_brk_summ->AddEntry(&h_sus_ch.value(), "Suspicious channels", "p");
-      if (noisy_channels->size() != 0)
+      if (noisy_channels.value().size() != 0)
         lg_brk_summ->AddEntry(&h_noisy_ch.value(), "Noisy channels", "p");
     }
     lg_brk_summ->AddEntry(&h_med_even, "Median of neighboring even channels",
@@ -651,16 +670,6 @@ int analysis_conn_check(bool detect_sus_ch = true) {
     delete c1;
     delete lg_brk_summ;
   }
-  // write_parameters(z_alpha, n_neigh_ch, n_broken_channels);
-  // mtx.unlock();
+  write_parameters(z_alpha, n_neigh_ch, sus_perc, n_sigmas, n_broken_channels);
   return 0;
 }
-
-// int main(int argc, char *argv[]) {
-//   analysis_conn_check(true);
-// // std::thread thread_1(analysis_conn_check, true);
-// // // std::thread thread_2(analysis_conn_check, false);
-// // thread_1.join();
-// // // thread_2.join();
-// return 0;
-// }
