@@ -46,15 +46,13 @@ execution()
 EOF
 
 # List the generated ROOT files and save to plot.txt
+cp ../../../bash_scripts/ASIC_sorting/find_ASICs_root.sh .
 cp ../../../bash_scripts/ASIC_sorting/count_select_sort_root_files.sh .
 chmod +x count_select_sort_root_files.sh
 ./count_select_sort_root_files.sh
 
 # Run the plotting macro
-root -l -b <<EOF
-.x plot_1024.C
-.q
-EOF
+root -l -b -q plot_1024.C
 
 # Find and open the generated PDF file 
 pdf_file="module_test_${module_id}.pdf"
