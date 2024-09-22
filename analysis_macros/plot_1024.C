@@ -63,11 +63,12 @@ void Analysis(int k = 0, int pol= 1, int fast_flag_user = 0){
   TH1F *hnoise_fast= (TH1F*)file_open->Get("h_enc_fast");
   
   for (int ch = 0; ch <128; ch++){
+  if(henc && hthr && hgain){
     if (pol == 1){
       enc_h[k*128+ch]  = henc->GetBinContent(ch+1);
       thr_h[k*128+ch]  = hthr->GetBinContent(ch+1);
       gain_h[k*128+ch] = hgain->GetBinContent(ch+1);
-      if (fast_flag == 1){
+      if (fast_flag == 1 && hnoise_fast && hmean_fast) {
             encf_h[k*128+ch] = hnoise_fast->GetBinContent(ch+1);
             thrf_h[k*128+ch] = hmean_fast->GetBinContent(ch+1);
       }
@@ -76,12 +77,12 @@ void Analysis(int k = 0, int pol= 1, int fast_flag_user = 0){
       enc_e[k*128+ch]  = henc->GetBinContent(ch+1);
       thr_e[k*128+ch]  = hthr->GetBinContent(ch+1);
       gain_e[k*128+ch] = hgain->GetBinContent(ch+1); 
-      if (fast_flag == 1){
+      if (fast_flag == 1 && hnoise_fast && hmean_fast) {
           encf_e[k*128+ch] = hnoise_fast->GetBinContent(ch+1);
           thrf_e[k*128+ch] = hmean_fast->GetBinContent(ch+1);
       }
     }
-  }  
+  }  }
  file_open->Close();
 }
 
